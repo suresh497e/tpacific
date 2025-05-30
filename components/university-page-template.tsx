@@ -2,7 +2,7 @@
 
 import type React from "react"
 
-import { useState } from "react"
+import { useRef, useState } from "react"
 import { ReliableImage } from "@/components/reliable-image"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import UniversityLogoCarousel from "@/components/university-logo-carousel"
@@ -10,6 +10,7 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 import Link from "next/link"
+import { motion, useInView } from "framer-motion"
 
 interface University {
   name: string
@@ -57,6 +58,8 @@ export function UniversityPageTemplate({
   faqs,
 }: UniversityPageTemplateProps) {
   const [activeTab, setActiveTab] = useState("overview")
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true, amount: 0.2 })
 
   return (
     <div className="min-h-screen bg-white">
@@ -160,7 +163,7 @@ export function UniversityPageTemplate({
       </section>
 
       {/* Popular Programs Section */}
-      <section className="py-16 bg-gray-50">
+      {/* <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-12 text-center">Popular Programs in {country}</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -176,7 +179,37 @@ export function UniversityPageTemplate({
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
+
+{/* Popular Programs Test Section */}
+<section className="py-16" ref={ref}> {/* Changed background color to differentiate */}
+  <div className="container mx-auto px-4">
+    <h2 className="text-3xl font-bold mb-12 text-center">Popular Programs in {country}</h2> {/* Changed title */}
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }} 
+      transition={{ duration: 0.6, delay: 0.1 }}
+      className="p-6 rounded-xl shadow-lg"
+    >
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {programs.map((program, index) => (
+          <motion.div
+            key={index}
+            whileHover={{
+              scale: 1.05,
+              boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+            }}
+            className="bg-gray-50 p-6 rounded-lg shadow-md transition-shadow duration-300"
+          >
+            <div className="mb-4">{program.icon}</div>
+            <h3 className="text-xl font-semibold mb-2">{program.title}</h3>
+            <p className="text-gray-600">{program.description}</p>
+          </motion.div>
+        ))}
+      </div>
+    </motion.div>
+  </div>
+</section>
 
       {/* Testimonial Section */}
       <section className="py-16 text-white bg-primary">
