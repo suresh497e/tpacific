@@ -24,7 +24,7 @@ export default function OfficeAnnouncement() {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             We're Expanding in <span className="text-gradient">Hyderabad</span>!
           </h2>
-          <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-700 max-w-3xl mx-auto stats-intro-text">
             We're thrilled to announce the opening of our new office in Hyderabad, India. This expansion allows us to
             better serve our clients and provide more personalized support for students and professionals looking to
             study and work abroad.

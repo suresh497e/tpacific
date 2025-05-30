@@ -14,6 +14,13 @@ export default function SentenceFormatter() {
       // Skip paragraphs that have already been processed
       if (paragraph.dataset.processed === "true") return
 
+      // Skip paragraphs that have already been processed or have special classes
+  if (
+    paragraph.dataset.processed === "true" || 
+    paragraph.classList.contains("keep-words-together") ||
+    paragraph.closest(".keep-words-together")
+  ) return;
+
       // Get the text content
       const text = paragraph.textContent || ""
 

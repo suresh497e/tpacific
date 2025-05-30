@@ -304,3 +304,34 @@ p + p {
   filter: blur(80px);
   z-index: 0;
 }
+
+
+
+
+
+
+/* Force center alignment for specific text that should never be justified */
+.stats-intro-text {
+  text-align: center !important;
+  text-justify: none !important;
+}
+
+.stats-intro-text.sentence,
+.stats-intro-text .sentence {
+  display: inline !important;
+  text-align: center !important;
+  width: auto !important;
+  margin-bottom: 0 !important;
+}
+
+.keep-words-together {
+  word-break: keep-all !important;
+  overflow-wrap: normal !important;
+  word-wrap: normal !important;
+  white-space: normal !important;
+  hyphens: none !important;
+  /* Additional properties to prevent any kind of breaking */
+  text-wrap: nowrap !important;
+  display: inline-block !important;
+}
+

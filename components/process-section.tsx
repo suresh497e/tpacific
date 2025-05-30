@@ -61,7 +61,7 @@ export default function ProcessSection({ className }: ProcessSectionProps) {
           <h2 className="text-2xl md:text-3xl font-bold mb-3">
             Personalised <span className="text-gradient">Guidance</span> for Your Study Abroad Journey
           </h2>
-          <p className="text-sm md:text-base text-center align-middle text-gray-600 max-w-2xl mx-auto">
+          <p className="stats-intro-text text-sm md:text-base !text-center  text-gray-600 max-w-2xl mx-auto">
             We understand the challenges you face and provide tailored solutions to make your international education
             dreams a reality.
           </p>
@@ -86,7 +86,7 @@ export default function ProcessSection({ className }: ProcessSectionProps) {
               At Transpacific
             </h3>
             <div className="text-gray-600 text-sm no-justify-container">
-              <p>
+              <p >
                 We understand that you aspire to study abroad, immerse yourself in new cultures, and achieve academic
                 excellence. To turn this dream into reality, you need clear guidance and effective preparation
                 throughout your journey.
@@ -112,7 +112,7 @@ export default function ProcessSection({ className }: ProcessSectionProps) {
               The Problem
             </h3>
             <div className="text-gray-600 text-sm no-justify-container">
-              <p>
+              <p className="keep-words-together">
                 Many students face unclear visa requirements, complicated application processes, and challenges with
                 documentation. These obstacles can leave you feeling overwhelmed, confused, and uncertain about your
                 study abroad journey.
@@ -178,7 +178,7 @@ export default function ProcessSection({ className }: ProcessSectionProps) {
               We Understand
             </h3>
             <div className="text-gray-600 text-sm no-justify-container">
-              <p>
+              <p className="keep-words-together">
                 We understand how these challenges can hinder your progress and dampen your excitement for studying
                 abroad. That's why Transpacific offers personalized solutions to simplify your journey with expert
                 guidance every step of the way.
@@ -223,7 +223,7 @@ export default function ProcessSection({ className }: ProcessSectionProps) {
                     <div className="bg-white p-4 rounded-lg shadow-lg text-center w-full cursor-pointer">
                       <h4 className="text-base md:text-lg font-semibold mb-2 text-primary">{step.title}</h4>
                       <div className="text-gray-600 text-sm no-justify-container">
-                        <p>{step.description}</p>
+                        <p className="keep-words-together">{step.description}</p>
                       </div>
                     </div>
                   </div>

@@ -67,10 +67,12 @@ export default function StatsSection({ className }: StatsSectionProps) {
           <h2 className="text-2xl md:text-3xl font-bold mb-3">
             About <span className="text-gradient">Transpacific</span>
           </h2>
-          <p className="text-base text-center md:text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+         
+          <p className="stats-intro-text !text-center md:text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
             We've helped thousands of students achieve their dreams of studying abroad with our expert guidance and
             support.
           </p>
+         
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
