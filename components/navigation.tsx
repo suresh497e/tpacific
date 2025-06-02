@@ -27,19 +27,19 @@ const routes = [
       { name: "Ireland", path: "/countries/ireland" },
     ],
   },
-  {
-    name: "Services",
-    path: "/services",
-   // icon: <GraduationCap className="h-4 w-4" />,
-    dropdown: true,
-    items: [
-      { name: "University Applications", path: "/services/university-applications" },
-      { name: "Visa Assistance", path: "/services/visa-assistance" },
-      { name: "IELTS Preparation", path: "/services/ielts-preparation" },
-      { name: "Accommodation", path: "/services/accommodation" },
-      { name: "Career Guidance", path: "/services/career-guidance" },
-    ],
-  },
+  // {
+  //   name: "Services",
+  //   path: "/services",
+  //  // icon: <GraduationCap className="h-4 w-4" />,
+  //   dropdown: true,
+  //   items: [
+  //     { name: "University Applications", path: "/services/university-applications" },
+  //     { name: "Visa Assistance", path: "/services/visa-assistance" },
+  //     { name: "IELTS Preparation", path: "/services/ielts-preparation" },
+  //     { name: "Accommodation", path: "/services/accommodation" },
+  //     { name: "Career Guidance", path: "/services/career-guidance" },
+  //   ],
+  // },
   { name: "About", path: "/about",   },
   { name: "Contact", path: "/contact",  },
 ]
