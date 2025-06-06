@@ -145,7 +145,7 @@ export default function UnitedStatesUniversityPage() {
     <UniversityPageTemplate
       country="United States"
       countryColor="#3c65af"
-      heroImage="/images/usa-hero-image.png"
+      heroImage="/countries_hero/USA.jpeg"
       universities={universities}
       programs={programs}
       testimonial={testimonial}

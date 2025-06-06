@@ -207,7 +207,7 @@ p + p {
   background: rgba(59, 130, 246, 0.2);
   backdrop-filter: blur(8px);
   border: 1px solid rgba(255, 255, 255, 0.2);
-}
+} 
 
 .blob {
   position: absolute;
@@ -241,7 +241,7 @@ p + p {
 
 .floating {
   animation: floating 3s ease-in-out infinite;
-}
+} 
 
 
 
@@ -304,6 +304,10 @@ p + p {
   filter: blur(80px);
   z-index: 0;
 }
+
+
+
+/* test styles */
 
 
 

@@ -10,6 +10,7 @@ import TestimonialCard from "@/components/testimonial-card"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { AustraliaLogoCarousel } from "@/components/australia-logo-carousel"
 import { UniversityLogo } from "@/components/university-logo"
+import CountryTestimonials from "@/components/country-testimonials"
 
 export default function AustraliaPage() {
   const australianUniversities = [
@@ -214,7 +215,7 @@ export default function AustraliaPage() {
             <div className="relative lg:h-[600px] animate-fade-in">
               <div className="relative h-full w-full rounded-2xl overflow-hidden">
                 <img
-                  src="/images/australia-landscape.png"
+                  src="/countries_hero/AUS.jpeg"
                   alt="Student at an Australian university campus"
                   className="h-full w-full object-cover"
                 />
@@ -464,7 +465,7 @@ export default function AustraliaPage() {
       </section>
 
       {/* Testimonial Section */}
-      <section className="section-padding">
+      {/* <section className="section-padding">
         <div className="container-custom">
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
             <Badge variant="outline" className="px-3 py-1 text-sm bg-background dark:bg-muted">
@@ -494,7 +495,57 @@ export default function AustraliaPage() {
             </Button>
           </div>
         </div>
-      </section>
+      </section> */}
+
+       <section className="section-padding">
+              <div className="">
+                <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                  <Badge variant="outline" className="px-3 py-1 text-sm bg-background dark:bg-muted">
+                    Student Voices
+                  </Badge>
+                  {/* <h2 className="font-galano text-3xl md:text-4xl font-bold">Student Story</h2> */}
+                  <p className="text-xl text-muted-foreground stats-intro-text">Success stories from students who chose Ireland</p>
+                </div>
+      
+                <div className="mx-auto w-full">
+                  <CountryTestimonials
+                    testimonials={[
+                      {
+                        quote:
+                          "Ireland gave me more than a degree. It gave me direction, confidence, and my first international job. Transpacific made every step smooth and stress-free.",
+                        name: "Kavya R.",
+                        title: "MSc in Data Analytics, Trinity College Dublin",
+                        image: "/images/indian-student-testimonial.png",
+                      },
+                      {
+                        quote:
+                          "The cultural experience in Ireland was incredible. I made friends from all over the world while studying at UCD. Transpacific's guidance on accommodation and part-time work opportunities was invaluable.",
+                        name: "Arjun P.",
+                        title: "MBA, University College Dublin",
+                        image: "/images/male-student-testimonial.png",
+                      },
+                      {
+                        quote:
+                          "As a tech student, Ireland's Silicon Docks provided amazing networking opportunities. I secured an internship at a major tech company during my studies, which led to a full-time role after graduation.",
+                        name: "Meera S.",
+                        title: "MSc Computer Science, Dublin City University",
+                        image: "/images/female-student-testimonial.png",
+                      },
+                    ]}
+                   // countryColor={emeraldGreen}
+                  />
+                </div>
+      
+                <div className="mt-12 text-center">
+                  <Button variant="outline" size="lg" asChild>
+                    <Link href="/testimonials" className="gap-2">
+                      Explore More Student Experiences
+                      <ArrowRight className="h-4 w-4" />
+                    </Link>
+                  </Button>
+                </div>
+              </div>
+            </section>
 
       {/* FAQ Section */}
       <section className="section-padding bg-muted/30 dark:bg-muted/10 border-y">

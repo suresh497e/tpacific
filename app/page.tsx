@@ -9,6 +9,7 @@ import NewsletterSection from "@/components/newsletter-section"
 import OfficeAnnouncement from "@/components/office-announcement"
 import { DirectJustifier } from "@/components/direct-justifier"
 import GetInTouch from "@/components/get-in-touch"
+import { DebugTheme } from "@/components/debug-theme"
 // import type { Metadata } from "next"
 
 // export const metadata: Metadata = {
@@ -37,6 +38,7 @@ export default function Home() {
       <ConsultationCTA />
       <GetInTouch className={sectionClasses.white} />
       <DirectJustifier />
+      {/* <DebugTheme /> */}
     </div>
   )
 }

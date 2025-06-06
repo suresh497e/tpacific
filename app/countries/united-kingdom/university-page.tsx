@@ -168,7 +168,7 @@ export default function UKUniversityPage() {
     <UniversityPageTemplate
       country="United Kingdom"
       countryColor="#2563eb"
-      heroImage="/images/uk-hero-image.png"
+      heroImage="/countries_hero/UK.jpeg"
       universities={universities}
       programs={programs}
       logoCarousel={<UKLogoCarousel />}

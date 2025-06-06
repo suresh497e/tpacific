@@ -11,6 +11,7 @@ import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 import Link from "next/link"
 import { motion, useInView } from "framer-motion"
+import CountryTestimonials from "./country-testimonials"
 
 interface University {
   name: string
@@ -108,7 +109,7 @@ export function UniversityPageTemplate({
         <div className="container mx-auto px-4">
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold mb-2">Our Partner Universities in {country}</h2>
-            <p className="text-gray-600">Transpacific has partnerships with top universities across {country}</p>
+            <p className="text-gray-600 stats-intro-text">Transpacific has partnerships with top universities across {country}</p>
           </div>
           <UniversityLogoCarousel universities={universities} speed={40} />
         </div>
@@ -212,11 +213,11 @@ export function UniversityPageTemplate({
 </section>
 
       {/* Testimonial Section */}
-      <section className="py-16 text-white bg-primary">
+      <section className="py-8 text-white bg-primary">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-8">Student Testimonial</h2>
-            <div className="mb-6">
+            {/* <h2 className="text-3xl font-bold mb-8">Student Testimonial</h2> */}
+            {/* <div className="mb-6">
               <p className="text-xl italic mb-6">"{testimonial.quote}"</p>
               <div className="flex items-center justify-center">
                 <div className="w-16 h-16 rounded-full overflow-hidden mr-4">
@@ -232,7 +233,35 @@ export function UniversityPageTemplate({
                   <p className="text-sm opacity-80">{testimonial.title}</p>
                 </div>
               </div>
-            </div>
+            </div> */}
+             <div className="mx-auto w-full">
+                        <CountryTestimonials
+                          testimonials={[
+                            {
+                              quote:
+                                "Ireland gave me more than a degree. It gave me direction, confidence, and my first international job. Transpacific made every step smooth and stress-free.",
+                              name: "Kavya R.",
+                              title: "MSc in Data Analytics, Trinity College Dublin",
+                              image: "/images/indian-student-testimonial.png",
+                            },
+                            {
+                              quote:
+                                "The cultural experience in Ireland was incredible. I made friends from all over the world while studying at UCD. Transpacific's guidance on accommodation and part-time work opportunities was invaluable.",
+                              name: "Arjun P.",
+                              title: "MBA, University College Dublin",
+                              image: "/images/male-student-testimonial.png",
+                            },
+                            {
+                              quote:
+                                "As a tech student, Ireland's Silicon Docks provided amazing networking opportunities. I secured an internship at a major tech company during my studies, which led to a full-time role after graduation.",
+                              name: "Meera S.",
+                              title: "MSc Computer Science, Dublin City University",
+                              image: "/images/female-student-testimonial.png",
+                            },
+                          ]}
+                          //countryColor={emeraldGreen}
+                        />
+                      </div>
           </div>
         </div>
       </section>

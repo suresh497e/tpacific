@@ -151,7 +151,7 @@ export default function NewZealandUniversityPage() {
     <UniversityPageTemplate
       country="New Zealand"
       countryColor="#10b981"
-      heroImage="/images/new-zealand-landscape.png"
+      heroImage="/countries_hero/NZ.jpeg"
       universities={universities}
       programs={programs}
       testimonial={testimonial}

@@ -20,10 +20,10 @@ export default function DestinationsSection({ className = "" }) {
         return "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1-BLTlyPKGRUh8ISSYl1R7cL2nMelmCf.png"
       case "australia":
         return "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/2-AoRJd3NM511VvesrduKlMk2SpLOhHe.png"
-      case "uk":
-        return "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/31-sOzroV5hW0CR2nAtziGeW2HZK6JoeC.png"
-      case "usa":
-        return "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/4-Si01selIzeP7s477XR7shazmeDeDiJ.png"
+      case "united-kingdom":
+        return "/uk_main.png"
+      case "united-states":
+        return "/usa_main.png"
       case "canada":
         return "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/5-RznHKEEhIWiWM1aRQ7YF6ncCqphBSf.png"
       case "ireland":

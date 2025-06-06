@@ -31,6 +31,7 @@ import ProcessStep from "@/components/process-step"
 import StatsCounter from "@/components/stats-counter"
 import Paragraph from "@/components/paragraph"
 import IrelandLogoCarousel from "@/components/ireland-logo-carousel"
+import CountryTestimonials from "@/components/country-testimonials"
 
 const emeraldGreen = "#007848"
 
@@ -67,7 +68,7 @@ export default function IrelandPage() {
             <div className="relative lg:h-[500px]">
               <div className="relative h-full w-full rounded-2xl overflow-hidden">
                 <img
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Ireland%20Student-lba50dAsSiCZRtKsQLXZbf4N9VkT13.jpeg"
+                  src="/countries_hero/ireland.jpeg"
                   alt="Indian student at an Irish university campus"
                   className="h-full w-full object-cover"
                 />
@@ -700,7 +701,7 @@ export default function IrelandPage() {
 
       {/* Testimonial Section */}
       <section className="section-padding">
-        <div className="container-custom">
+        <div className="">
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
             <Badge variant="outline" className="px-3 py-1 text-sm bg-background dark:bg-muted">
               Student Voices
@@ -709,12 +710,32 @@ export default function IrelandPage() {
             <p className="text-xl text-muted-foreground">Success stories from students who chose Ireland</p>
           </div>
 
-          <div className="max-w-3xl mx-auto">
-            <TestimonialCard
-              quote="Ireland gave me more than a degree. It gave me direction, confidence, and my first international job. Transpacific made every step smooth and stress-free."
-              name="Kavya R."
-              title="MSc in Data Analytics, Trinity College Dublin"
-              image="/images/indian-student-testimonial.png"
+          <div className="mx-auto w-full">
+            <CountryTestimonials
+              testimonials={[
+                {
+                  quote:
+                    "Ireland gave me more than a degree. It gave me direction, confidence, and my first international job. Transpacific made every step smooth and stress-free.",
+                  name: "Kavya R.",
+                  title: "MSc in Data Analytics, Trinity College Dublin",
+                  image: "/images/indian-student-testimonial.png",
+                },
+                {
+                  quote:
+                    "The cultural experience in Ireland was incredible. I made friends from all over the world while studying at UCD. Transpacific's guidance on accommodation and part-time work opportunities was invaluable.",
+                  name: "Arjun P.",
+                  title: "MBA, University College Dublin",
+                  image: "/images/male-student-testimonial.png",
+                },
+                {
+                  quote:
+                    "As a tech student, Ireland's Silicon Docks provided amazing networking opportunities. I secured an internship at a major tech company during my studies, which led to a full-time role after graduation.",
+                  name: "Meera S.",
+                  title: "MSc Computer Science, Dublin City University",
+                  image: "/images/female-student-testimonial.png",
+                },
+              ]}
+              countryColor={emeraldGreen}
             />
           </div>
 
@@ -872,3 +893,6 @@ export default function IrelandPage() {
     </>
   )
 }
+
+
+

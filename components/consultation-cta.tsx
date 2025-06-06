@@ -25,14 +25,14 @@ export default function ConsultationCTA() {
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="mx-auto max-w-3xl text-center">      {/*  grid grid-cols-1 lg:grid-cols-2 gap-12 items-center */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">Ready to Begin Your Global Journey?</h2>
-            <p className="text-lg text-white/90 mb-8">
+            <p className="text-lg text-white/90 mb-8 stats-intro-text">
               Our expert advisors are ready to guide you through every step of your international education journey.
               From course selection to visa applications, we provide personalized support to help you achieve your
               academic and career goals.
