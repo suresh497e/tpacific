@@ -1,7 +1,14 @@
-import Link from "next/link"
-import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
+import Link from "next/link";
+import {
+  Facebook,
+  Instagram,
+  Linkedin,
+  Mail,
+  MapPin,
+  Phone,
+} from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 
 export default function Footer() {
   return (
@@ -17,18 +24,28 @@ export default function Footer() {
               />
             </Link>
             <p className="text-muted-foreground max-w-xs">
-              Your trusted partner for global education and visa consultancy services since 2010.
+              Your trusted partner for global education and visa consultancy
+              services since 2010.
             </p>
             <div className="flex space-x-4">
-              <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <Link
+                href="#"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
                 <Facebook className="h-5 w-5" />
                 <span className="sr-only">Facebook</span>
               </Link>
-              <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <Link
+                href="#"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
                 <Instagram className="h-5 w-5" />
                 <span className="sr-only">Instagram</span>
               </Link>
-              <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <Link
+                href="#"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
               </Link>
@@ -38,25 +55,46 @@ export default function Footer() {
           <div className="space-y-4">
             <h3 className="font-galano text-lg font-semibold">Quick Links</h3>
             <nav className="flex flex-col space-y-3">
-              <Link href="/" className="text-muted-foreground hover:text-primary transition-colors">
+              <Link
+                href="/"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
                 Home
               </Link>
-              <Link href="/about" className="text-muted-foreground hover:text-primary transition-colors">
+              <Link
+                href="/about"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
                 About Us
               </Link>
-              <Link href="/countries" className="text-muted-foreground hover:text-primary transition-colors">
+              <Link
+                href="/countries"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
                 Study Destinations
               </Link>
-              <Link href="/consultation" className="text-muted-foreground hover:text-primary transition-colors">
+              <Link
+                href="/consultation"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
                 Free Consultation
               </Link>
-              <Link href="/contact" className="text-muted-foreground hover:text-primary transition-colors">
+              <Link
+                href="/contact"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
                 Contact
               </Link>
-              <Link href="/faqs" className="text-muted-foreground hover:text-primary transition-colors">
+              <Link
+                href="/faqs"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
                 FAQs
               </Link>
-              <Link href="/blog" className="text-muted-foreground hover:text-primary transition-colors">
+              <Link
+                href="/blog"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
                 Blog
               </Link>
             </nav>
@@ -68,8 +106,11 @@ export default function Footer() {
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                 <div>
-                  <p className="font-medium">Auckland, New Zealand</p>
-                  <p className="text-sm text-muted-foreground">Suite 6, Floor 1, 93 Dominion Road, Mount Eden</p>
+                  <p className="font-medium">Hyderabad, India</p>
+                  <p className="text-sm text-muted-foreground">
+                    SRR complex 4th floor H-No-13-9-12 Opposite konark theatre
+                    Lalitha Nagar Dilsukh nagar{" "}
+                  </p>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
@@ -78,7 +119,10 @@ export default function Footer() {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-primary shrink-0" />
-                <a href="mailto:info@tpacific.co.nz" className="hover:text-primary transition-colors">
+                <a
+                  href="mailto:info@tpacific.co.nz"
+                  className="hover:text-primary transition-colors"
+                >
                   info@tpacific.co.nz
                 </a>
               </div>
@@ -88,10 +132,15 @@ export default function Footer() {
           <div className="space-y-4">
             <h3 className="font-galano text-lg font-semibold">Newsletter</h3>
             <p className="text-muted-foreground">
-              Subscribe to receive updates on scholarships, visa changes, and more.
+              Subscribe to receive updates on scholarships, visa changes, and
+              more.
             </p>
             <div className="flex flex-col space-y-2">
-              <Input type="email" placeholder="Your email address" className="bg-background" />
+              <Input
+                type="email"
+                placeholder="Your email address"
+                className="bg-background"
+              />
               <Button className="w-full">Subscribe</Button>
             </div>
           </div>
@@ -100,16 +149,26 @@ export default function Footer() {
         <div className="mt-16 pt-8 border-t border-border/50">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-sm text-muted-foreground">
-              © {new Date().getFullYear()} Transpacific Immigration Services. All rights reserved.
+              © {new Date().getFullYear()} Transpacific Immigration Services.
+              All rights reserved.
             </p>
             <div className="flex space-x-6 text-sm">
-              <Link href="/privacy" className="text-muted-foreground hover:text-primary transition-colors">
+              <Link
+                href="/privacy"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
                 Privacy Policy
               </Link>
-              <Link href="/terms" className="text-muted-foreground hover:text-primary transition-colors">
+              <Link
+                href="/terms"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
                 Terms of Service
               </Link>
-              <Link href="/cookies" className="text-muted-foreground hover:text-primary transition-colors">
+              <Link
+                href="/cookies"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
                 Cookie Policy
               </Link>
             </div>
@@ -117,5 +176,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }

@@ -395,7 +395,7 @@ export default function AboutPage() {
                   style={{ minHeight: "400px" }}
                 >
                   <Image
-                    src="/images/about-hero-image.png"
+                    src="/about_hero.png"
                     alt="Students collaborating and studying together"
                     fill
                     style={{ objectFit: "cover" }}
