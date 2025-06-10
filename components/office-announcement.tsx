@@ -1,13 +1,13 @@
-"use client"
+"use client";
 
-import { useRef } from "react"
-import { motion, useInView } from "framer-motion"
-import { MapPin, Calendar } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import { useRef } from "react";
+import { motion, useInView } from "framer-motion";
+import { MapPin, Calendar } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export default function OfficeAnnouncement() {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, amount: 0.2 })
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, amount: 0.2 });
 
   return (
     <section className="py-16 bg-gradient-to-b from-blue-50 to-white" ref={ref}>
@@ -19,15 +19,15 @@ export default function OfficeAnnouncement() {
           className="text-center mb-10"
         >
           <span className="inline-block px-4 py-2 rounded-full bg-blue-100 text-primary text-sm font-medium mb-4">
-            Exciting News
+            🎉 Exciting News!
           </span>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            We're Expanding in <span className="text-gradient">Hyderabad</span>!
+            Our Hyderabad Office Just Got Bigger!
           </h2>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto stats-intro-text">
-            We're thrilled to announce the opening of our new office in Hyderabad, India. This expansion allows us to
-            better serve our clients and provide more personalized support for students and professionals looking to
-            study and work abroad.
+            We’ve expanded to serve you better—with more space, more support,
+            and even more personalized guidance for your study and work abroad
+            journey.
           </p>
         </motion.div>
 
@@ -67,9 +67,11 @@ export default function OfficeAnnouncement() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="text-center mt-10"
         >
-          <Button className="rounded-full px-8 py-6 text-lg">Schedule a Visit</Button>
+          <Button className="rounded-full px-8 py-6 text-lg">
+            Schedule a Visit
+          </Button>
         </motion.div>
       </div>
     </section>
-  )
+  );
 }

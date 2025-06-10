@@ -303,7 +303,7 @@ export default function AboutPage() {
   return (
     <main className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-slate-800 to-slate-900 py-16 md:py-20">
+      <section className="relative bg-gradient-to-r from-slate-800 to-slate-900 py-4 md:py-4">
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
@@ -453,7 +453,7 @@ export default function AboutPage() {
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
               Our Leadership
             </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto stats-intro-text">
               Meet the experienced professionals who guide Transpacific's
               mission to transform students' global education dreams into
               reality.
@@ -476,8 +476,8 @@ export default function AboutPage() {
               <h3 className="text-xl font-bold mb-2 text-slate-800">
                 Rajesh Kumar
               </h3>
-              <p className="text-primary font-semibold mb-3">CEO & Founder</p>
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <p className="text-primary font-semibold mb-3 stats-intro-text">CEO & Founder</p>
+              <p className="text-gray-600 text-sm leading-relaxed stats-intro-text">
                 With over 15 years of experience in international education
                 consulting, Rajesh founded Transpacific with a vision to make
                 global education accessible to every deserving student. His
@@ -501,10 +501,10 @@ export default function AboutPage() {
               <h3 className="text-xl font-bold mb-2 text-slate-800">
                 Priya Sharma
               </h3>
-              <p className="text-primary font-semibold mb-3">
+              <p className="text-primary font-semibold mb-3 stats-intro-text">
                 Director of Operations
               </p>
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <p className="text-gray-600 text-sm leading-relaxed stats-intro-text">
                 Priya brings 12+ years of operational excellence to
                 Transpacific. She oversees our multi-country operations and
                 ensures seamless service delivery across all our offices. Her
@@ -528,10 +528,10 @@ export default function AboutPage() {
               <h3 className="text-xl font-bold mb-2 text-slate-800">
                 Amit Patel
               </h3>
-              <p className="text-primary font-semibold mb-3">
+              <p className="text-primary font-semibold mb-3 stats-intro-text">
                 Head of Student Services
               </p>
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <p className="text-gray-600 text-sm leading-relaxed stats-intro-text">
                 Amit leads our student counseling and support services with 10+
                 years of experience in international education. His personalized
                 approach and deep understanding of global education systems have

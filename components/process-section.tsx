@@ -1,37 +1,37 @@
-"use client"
+"use client";
 
-import { useRef } from "react"
-import { motion, useInView } from "framer-motion"
-import { CheckCircle2, ArrowRight } from "lucide-react"
+import { useRef } from "react";
+import { motion, useInView } from "framer-motion";
+import { CheckCircle2, ArrowRight } from "lucide-react";
 
 interface ProcessSectionProps {
-  className?: string
+  className?: string;
 }
 
 export default function ProcessSection({ className }: ProcessSectionProps) {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, amount: 0.2 })
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, amount: 0.2 });
 
   const steps = [
     {
       number: "01",
       title: "Personalised Consultation",
       description:
-        "We begin with an in-depth consultation to understand your academic background and career goals to create a tailored plan for your education journey abroad.",
+        "We assess your background and goals to craft a custom study plan.",
     },
     {
       number: "02",
-      title: "Streamlined Application Assistance",
+      title: "Application Assistance",
       description:
-        "Our experts guide you through the application process, from university selection to visa documentation, ensuring all requirements are met accurately and on time.",
+        "From choosing universities to visa paperwork—we guide you every step.",
     },
     {
       number: "03",
-      title: "Ongoing Support and Preparation",
+      title: "Ongoing Support",
       description:
-        "We provide continuous support before and after your approval, including pre-departure orientation, accommodation assistance, and cultural preparation.",
+        "Get help with pre-departure, housing, and settling into your new life.",
     },
-  ]
+  ];
 
   return (
     <div className={`relative overflow-hidden ${className}`} ref={ref}>
@@ -59,11 +59,12 @@ export default function ProcessSection({ className }: ProcessSectionProps) {
             Our Approach
           </span>
           <h2 className="text-2xl md:text-3xl font-bold mb-3">
-            Personalised <span className="text-gradient">Guidance</span> for Your Study Abroad Journey
+            Personalised <span className="text-gradient">Guidance</span> for
+            Your Study Abroad Journey
           </h2>
           <p className="stats-intro-text text-sm md:text-base !text-center  text-gray-600 max-w-2xl mx-auto">
-            We understand the challenges you face and provide tailored solutions to make your international education
-            dreams a reality.
+            We understand the challenges you face and provide tailored solutions
+            to make your international education dreams a reality.
           </p>
         </motion.div>
 
@@ -75,7 +76,8 @@ export default function ProcessSection({ className }: ProcessSectionProps) {
             whileHover={{
               scale: 1.05,
               y: -5,
-              boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+              boxShadow:
+                "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
             }}
             className="bg-white p-4 rounded-xl shadow-lg h-full cursor-pointer"
           >
@@ -83,13 +85,12 @@ export default function ProcessSection({ className }: ProcessSectionProps) {
               <span className="flex items-center justify-center w-8 h-8 rounded-full bg-primary/10 text-primary mr-2">
                 <CheckCircle2 className="h-4 w-4" />
               </span>
-              At Transpacific
+              Your Dream, Our Mission
             </h3>
             <div className="text-gray-600 text-sm no-justify-container">
-              <p >
-                We understand that you aspire to study abroad, immerse yourself in new cultures, and achieve academic
-                excellence. To turn this dream into reality, you need clear guidance and effective preparation
-                throughout your journey.
+              <p className="keep-words-together">
+                Want to study abroad? We help turn your dream into a clear,
+                achievable plan.
               </p>
             </div>
           </motion.div>
@@ -101,7 +102,8 @@ export default function ProcessSection({ className }: ProcessSectionProps) {
             whileHover={{
               scale: 1.05,
               y: -5,
-              boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+              boxShadow:
+                "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
             }}
             className="bg-white p-4 rounded-xl shadow-lg h-full cursor-pointer"
           >
@@ -112,10 +114,9 @@ export default function ProcessSection({ className }: ProcessSectionProps) {
               The Problem
             </h3>
             <div className="text-gray-600 text-sm no-justify-container">
-              <p className="keep-words-together">
-                Many students face unclear visa requirements, complicated application processes, and challenges with
-                documentation. These obstacles can leave you feeling overwhelmed, confused, and uncertain about your
-                study abroad journey.
+              <p className="keep-words-together text-wrap">
+                Confused by visas, forms, and rules? You're not alone—most
+                students feel lost in the process.
               </p>
             </div>
           </motion.div>
@@ -141,7 +142,8 @@ export default function ProcessSection({ className }: ProcessSectionProps) {
             whileHover={{
               scale: 1.05,
               y: -5,
-              boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+              boxShadow:
+                "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
             }}
             className="bg-white p-4 rounded-xl shadow-lg h-full cursor-pointer"
           >
@@ -149,13 +151,12 @@ export default function ProcessSection({ className }: ProcessSectionProps) {
               <span className="flex items-center justify-center w-8 h-8 rounded-full bg-primary/10 text-primary mr-2">
                 <CheckCircle2 className="h-4 w-4" />
               </span>
-              We Believe
+              Our Promise
             </h3>
             <div className="text-gray-600 text-sm no-justify-container">
               <p>
-                It's unfair that anyone should face these barriers when pursuing their educational goals and
-                international dreams. Every student deserves clear guidance and comprehensive support to achieve their
-                global education aspirations.
+                Clarity. Confidence. Success. With personalized guidance, we
+                simplify every step.
               </p>
             </div>
           </motion.div>
@@ -167,7 +168,8 @@ export default function ProcessSection({ className }: ProcessSectionProps) {
             whileHover={{
               scale: 1.05,
               y: -5,
-              boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+              boxShadow:
+                "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
             }}
             className="bg-white p-4 rounded-xl shadow-lg h-full cursor-pointer"
           >
@@ -175,13 +177,12 @@ export default function ProcessSection({ className }: ProcessSectionProps) {
               <span className="flex items-center justify-center w-8 h-8 rounded-full bg-primary/10 text-primary mr-2">
                 <CheckCircle2 className="h-4 w-4" />
               </span>
-              We Understand
+              Why Transpacific
             </h3>
             <div className="text-gray-600 text-sm no-justify-container">
-              <p className="keep-words-together">
-                We understand how these challenges can hinder your progress and dampen your excitement for studying
-                abroad. That's why Transpacific offers personalized solutions to simplify your journey with expert
-                guidance every step of the way.
+              <p className="keep-words-together text-wrap">
+                We get it—and we've got you. From paperwork to visa approval,
+                we're with you all the way.
               </p>
             </div>
           </motion.div>
@@ -194,7 +195,7 @@ export default function ProcessSection({ className }: ProcessSectionProps) {
           className="mt-8 pt-8 border-t border-gray-200"
         >
           <h3 className="text-2xl md:text-3xl font-bold text-center mb-8">
-            Our Three-Step Process For Study Abroad Success
+            🎓 Our 3-Step Study Abroad Success Plan
           </h3>
 
           <div className="relative">
@@ -221,9 +222,13 @@ export default function ProcessSection({ className }: ProcessSectionProps) {
                       </div>
                     </div>
                     <div className="bg-white p-4 rounded-lg shadow-lg text-center w-full cursor-pointer">
-                      <h4 className="text-base md:text-lg font-semibold mb-2 text-primary">{step.title}</h4>
+                      <h4 className="text-base md:text-lg font-semibold mb-2 text-primary">
+                        {step.title}
+                      </h4>
                       <div className="text-gray-600 text-sm no-justify-container">
-                        <p className="keep-words-together">{step.description}</p>
+                        <p className="keep-words-together">
+                          {step.description}
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -249,7 +254,7 @@ export default function ProcessSection({ className }: ProcessSectionProps) {
           overflow: visible;
           width: 100%;
         }
-        
+
         .no-justify-container p span {
           display: inline;
           text-align: left;
@@ -258,5 +263,5 @@ export default function ProcessSection({ className }: ProcessSectionProps) {
         }
       `}</style>
     </div>
-  )
+  );
 }
