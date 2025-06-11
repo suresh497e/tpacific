@@ -29,14 +29,14 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4">
               <Link
-                href="#"
+                href="https://www.facebook.com/share/1EqsjVFMwt/"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
                 <Facebook className="h-5 w-5" />
                 <span className="sr-only">Facebook</span>
               </Link>
               <Link
-                href="#"
+                href="https://www.instagram.com/transpacific_in/"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
                 <Instagram className="h-5 w-5" />

@@ -549,7 +549,7 @@ export default function AboutPage() {
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
               Why Choose Transpacific?
             </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto stats-intro-text">
               We don't just file applications. We mentor futures and guide you
               through every step of your international education journey.
             </p>
@@ -652,7 +652,7 @@ export default function AboutPage() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 stats-intro-text">
               What We Do
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
