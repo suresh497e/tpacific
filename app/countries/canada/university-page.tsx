@@ -164,7 +164,7 @@ export default function CanadaUniversityPage() {
     <UniversityPageTemplate
       country="Canada"
       countryColor="#e11d48"
-      heroImage="/countries_hero/canada.jpeg"
+      heroImage="/countries_hero/Canada.jpeg"
       universities={universities}
       programs={programs}
       testimonial={{

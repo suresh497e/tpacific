@@ -313,7 +313,7 @@
 
 
 
-
+"use client"
 import Link from "next/link"
 import { ArrowRight, Clock, Mail, MapPin, Phone } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -324,8 +324,82 @@ import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Badge } from "@/components/ui/badge"
 import Image from "next/image"
+import { useState } from "react"
+import { sendEmail } from "@/lib/send-mail"
+import { set } from "date-fns"
 
 export default function ContactPage() {
+  const [formData, setFormData]= useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    service: "",
+    message: ""
+  })
+
+  // Add loading state
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  
+  // Handle input changes
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { id, value } = e.target
+    setFormData(prev => ({ ...prev, [id]: value }))
+  }
+  
+  // Handle select changes
+  const handleSelectChange = (value: string) => {
+    setFormData(prev => ({ ...prev, service: value }))
+  }
+  
+  // Handle form submission
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    setIsSubmitting(true)
+    
+    
+     try {
+      
+      const result = await sendEmail({
+       // to: "info@tpacific.co.nz",
+        to: "info@tpacific.co.nz",
+        subject: "New Contact Form Submission",
+        html: `
+          <h2>New Contact Form Submission</h2>
+          <p><strong>Name:</strong> ${formData.firstName} ${formData.lastName}</p>
+          <p><strong>Email:</strong> ${formData.email}</p>
+          <p><strong>Phone:</strong> ${formData.phone}</p>
+          <p><strong>Service:</strong> ${formData.service}</p>
+          <p><strong>Message:</strong> ${formData.message}</p>
+        `,
+      });
+
+      if (result.success) {
+       
+        console.log("sent mail")
+        setFormData({
+          firstName: "",
+          lastName: "",
+          email: "",
+          phone: "",
+          service: "",
+          message: ""
+        })
+      } else {
+       
+      }
+    } catch (error) {
+      console.error("Error sending email:", error);
+     
+    } finally {
+      setIsSubmitting(false);
+      
+    }
+    console.log("Form submitted:", formData)
+    
+    
+  }
+  
   return (
     <>
       {/* Top Banner */}
@@ -452,31 +526,31 @@ export default function ContactPage() {
               <Card className="border-border/50">
                 <CardContent className="p-6">
                   <h2 className="font-galano text-2xl font-bold mb-6">Get in Touch</h2>
-                  <form className="space-y-6">
+                  <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div className="space-y-2">
                         <Label htmlFor="firstName">First Name</Label>
-                        <Input id="firstName" placeholder="Enter your first name" required />
+                        <Input value={formData.firstName} onChange={handleInputChange} id="firstName" placeholder="Enter your first name" required />
                       </div>
                       <div className="space-y-2">
                         <Label htmlFor="lastName">Last Name</Label>
-                        <Input id="lastName" placeholder="Enter your last name" required />
+                        <Input value={formData.lastName} onChange={handleInputChange} id="lastName" placeholder="Enter your last name" required />
                       </div>
                     </div>
 
                     <div className="space-y-2">
                       <Label htmlFor="email">Email Address</Label>
-                      <Input id="email" type="email" placeholder="Enter your email address" required />
+                      <Input value={formData.email} onChange={handleInputChange} id="email" type="email" placeholder="Enter your email address" required />
                     </div>
 
                     <div className="space-y-2">
                       <Label htmlFor="phone">Phone Number</Label>
-                      <Input id="phone" placeholder="Enter your phone number" required />
+                      <Input value={formData.phone} onChange={handleInputChange} id="phone" placeholder="Enter your phone number" required />
                     </div>
 
                     <div className="space-y-2">
                       <Label htmlFor="service">Service Interested In</Label>
-                      <Select>
+                      <Select value={formData.service} onValueChange={handleSelectChange}>
                         <SelectTrigger>
                           <SelectValue placeholder="Select a service" />
                         </SelectTrigger>
@@ -494,12 +568,14 @@ export default function ContactPage() {
                       <Label htmlFor="message">Message</Label>
                       <Textarea
                         id="message"
+                        value={formData.message}
+                        onChange={handleInputChange}
                         placeholder="e.g., Looking to apply for MS in Canada, Fall 2025"
                         rows={4}
                       />
                     </div>
 
-                    <Button type="submit" className="w-full">
+                    <Button disabled={isSubmitting} type="submit" className="w-full">
                       Send Message
                     </Button>
 

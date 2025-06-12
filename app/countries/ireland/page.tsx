@@ -68,7 +68,7 @@ export default function IrelandPage() {
             <div className="relative lg:h-[500px]">
               <div className="relative h-full w-full rounded-2xl overflow-hidden">
                 <img
-                  src="/countries_hero/ireland.jpeg"
+                  src="/countries_hero/Ireland.jpeg"
                   alt="Indian student at an Irish university campus"
                   className="h-full w-full object-cover"
                 />
