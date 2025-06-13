@@ -284,22 +284,50 @@ export function UniversityPageTemplate({
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gray-50">
+      {/* <section className="py-16 bg-primary text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to Start Your {country} Education Journey?</h2>
-          <p className="text-xl mb-8 max-w-3xl mx-auto">
+          <p className="text-xl text-white/80 mb-8 max-w-3xl mx-auto stats-intro-text">
             Let Transpacific guide you through every step of the application process. Our experts have helped thousands
             of students achieve their dreams of studying in {country}.
           </p>
           <Button asChild>
           <a
             href="/contact"
-            className="inline-block py-3 px-8  text-white font-semibold rounded-md hover:opacity-90 transition-opacity duration-300"
+            className="inline-block py-3 px-8  text-[#000] bg-white font-semibold rounded-md hover:bg-[#000] hover:text-white"
             //style={{ backgroundColor: countryColor }}
           >
             Book a Free Consultation
           </a>
           </Button>
+        </div>
+      </section> */}
+
+       <section className="section-padding bg-primary text-primary-foreground">
+        <div className="container-custom">
+          <div className="max-w-3xl mx-auto text-center space-y-6">
+            <h2 className="font-galano text-3xl md:text-4xl font-bold">Ready to Start Your {country} Education Journey?</h2>
+            <p className="text-xl opacity-90 stats-intro-text">
+             Let Transpacific guide you through every step of the application process. Our experts have helped thousands
+            of students achieve their dreams of studying in {country}.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+              <Button size="lg" variant="secondary" asChild className="px-8 py-6 text-lg">
+                <Link href="/consultation" className="gap-2">
+                  Book Your Free Consultation
+                  <ArrowRight className="h-4 w-4" />
+                </Link>
+              </Button>
+              {/* <Button
+                size="lg"
+                variant="outline"
+                className="bg-primary-foreground/10 border-primary-foreground/20 hover:bg-primary-foreground/20 px-8 py-6 text-lg"
+                asChild
+              >
+                <Link href="/apply">Apply to Study in Australia</Link>
+              </Button> */}
+            </div>
+          </div>
         </div>
       </section>
     </div>

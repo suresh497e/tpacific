@@ -226,7 +226,7 @@ export default function ProcessSection({ className }: ProcessSectionProps) {
                         {step.title}
                       </h4>
                       <div className="text-gray-600 text-sm no-justify-container">
-                        <p className="keep-words-together">
+                        <p className="keep-words-together stats-intro-text">
                           {step.description}
                         </p>
                       </div>

@@ -41,10 +41,10 @@ export default function FrustrationsSection({ className = "" }) {
     <section className={`${className}`}>
       <div className="container mx-auto px-4">
         <h2 className="text-2xl md:text-3xl font-bold text-center  mb-3">Are You Facing These Frustrations?</h2>
-        <p className=" text-gray-600 mb-8 max-w-2xl  text-center text-sm md:text-base">
+        <div className=" text-gray-600 mb-8 max-w-2xl  text-center text-sm md:text-base stats-intro-text center mx-auto">
           Many students encounter these common challenges when applying for international education. We're here to help
           you overcome them.
-        </p>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {frustrations.map((frustration, index) => (

@@ -53,7 +53,7 @@ export default function DestinationsSection({ className = "" }) {
           >
             <JustifiedText
               text="Explore top educational destinations around the world and find the perfect place to pursue your academic goals."
-              className="text-justify"
+              className="text-justify stats-intro-text"
             />
           </motion.div>
         </div>

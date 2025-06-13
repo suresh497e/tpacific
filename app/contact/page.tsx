@@ -315,7 +315,7 @@
 
 "use client"
 import Link from "next/link"
-import { ArrowRight, Clock, Mail, MapPin, Phone } from "lucide-react"
+import { ArrowRight, Clock, Mail, MapPin, Phone, CheckCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
@@ -326,10 +326,11 @@ import { Badge } from "@/components/ui/badge"
 import Image from "next/image"
 import { useState } from "react"
 import { sendEmail } from "@/lib/send-mail"
-import { set } from "date-fns"
+import { motion, AnimatePresence } from "framer-motion"
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 
 export default function ContactPage() {
-  const [formData, setFormData]= useState({
+  const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
     email: "",
@@ -338,8 +339,9 @@ export default function ContactPage() {
     message: ""
   })
 
-  // Add loading state
+  // Add loading and success states
   const [isSubmitting, setIsSubmitting] = useState(false)
+  const [isSubmitted, setIsSubmitted] = useState(false)
   
   // Handle input changes
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -357,11 +359,8 @@ export default function ContactPage() {
     e.preventDefault()
     setIsSubmitting(true)
     
-    
-     try {
-      
+    try {
       const result = await sendEmail({
-       // to: "info@tpacific.co.nz",
         to: "info@tpacific.co.nz",
         subject: "New Contact Form Submission",
         html: `
@@ -375,8 +374,9 @@ export default function ContactPage() {
       });
 
       if (result.success) {
-       
-        console.log("sent mail")
+        console.log("Email sent successfully")
+        setIsSubmitted(true)
+        // Reset form data
         setFormData({
           firstName: "",
           lastName: "",
@@ -385,19 +385,21 @@ export default function ContactPage() {
           service: "",
           message: ""
         })
+        
+        // Auto-hide success message after 5 seconds
+        setTimeout(() => {
+          setIsSubmitted(false)
+        }, 5000)
       } else {
-       
+        console.error("Failed to send email")
+        alert("There was an error sending your message. Please try again later.")
       }
     } catch (error) {
-      console.error("Error sending email:", error);
-     
+      console.error("Error sending email:", error)
+      alert("There was an error sending your message. Please try again later.")
     } finally {
-      setIsSubmitting(false);
-      
+      setIsSubmitting(false)
     }
-    console.log("Form submitted:", formData)
-    
-    
   }
   
   return (
@@ -522,35 +524,81 @@ export default function ContactPage() {
               </div>
             </div>
 
-            <div>
+            <div className="space-y-4">
+              {/* Success message */}
+              <AnimatePresence>
+                {isSubmitted && (
+                  <motion.div
+                    initial={{ opacity: 0, y: -20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -20 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    <Alert className="bg-green-50 border-green-200 text-green-800">
+                      <CheckCircle className="h-4 w-4 text-green-600" />
+                      <AlertTitle className="text-green-800 font-medium">Success!</AlertTitle>
+                      <AlertDescription className="text-green-700">
+                        Your message has been sent successfully. We'll get back to you soon.
+                      </AlertDescription>
+                    </Alert>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+
+              {/* Form */}
               <Card className="border-border/50">
                 <CardContent className="p-6">
                   <h2 className="font-galano text-2xl font-bold mb-6">Get in Touch</h2>
-                  <form onSubmit={handleSubmit} className="space-y-6">
+                  <form className="space-y-6" onSubmit={handleSubmit}>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div className="space-y-2">
                         <Label htmlFor="firstName">First Name</Label>
-                        <Input value={formData.firstName} onChange={handleInputChange} id="firstName" placeholder="Enter your first name" required />
+                        <Input 
+                          id="firstName" 
+                          placeholder="Enter your first name" 
+                          required 
+                          value={formData.firstName}
+                          onChange={handleInputChange}
+                        />
                       </div>
                       <div className="space-y-2">
                         <Label htmlFor="lastName">Last Name</Label>
-                        <Input value={formData.lastName} onChange={handleInputChange} id="lastName" placeholder="Enter your last name" required />
+                        <Input 
+                          id="lastName" 
+                          placeholder="Enter your last name" 
+                          required 
+                          value={formData.lastName}
+                          onChange={handleInputChange}
+                        />
                       </div>
                     </div>
 
                     <div className="space-y-2">
                       <Label htmlFor="email">Email Address</Label>
-                      <Input value={formData.email} onChange={handleInputChange} id="email" type="email" placeholder="Enter your email address" required />
+                      <Input 
+                        id="email" 
+                        type="email" 
+                        placeholder="Enter your email address" 
+                        required 
+                        value={formData.email}
+                        onChange={handleInputChange}
+                      />
                     </div>
 
                     <div className="space-y-2">
                       <Label htmlFor="phone">Phone Number</Label>
-                      <Input value={formData.phone} onChange={handleInputChange} id="phone" placeholder="Enter your phone number" required />
+                      <Input 
+                        id="phone" 
+                        placeholder="Enter your phone number" 
+                        required 
+                        value={formData.phone}
+                        onChange={handleInputChange}
+                      />
                     </div>
 
                     <div className="space-y-2">
                       <Label htmlFor="service">Service Interested In</Label>
-                      <Select value={formData.service} onValueChange={handleSelectChange}>
+                      <Select onValueChange={handleSelectChange} value={formData.service}>
                         <SelectTrigger>
                           <SelectValue placeholder="Select a service" />
                         </SelectTrigger>
@@ -568,15 +616,15 @@ export default function ContactPage() {
                       <Label htmlFor="message">Message</Label>
                       <Textarea
                         id="message"
-                        value={formData.message}
-                        onChange={handleInputChange}
                         placeholder="e.g., Looking to apply for MS in Canada, Fall 2025"
                         rows={4}
+                        value={formData.message}
+                        onChange={handleInputChange}
                       />
                     </div>
 
-                    <Button disabled={isSubmitting} type="submit" className="w-full">
-                      Send Message
+                    <Button type="submit" className="w-full" disabled={isSubmitting}>
+                      {isSubmitting ? "Sending..." : "Send Message"}
                     </Button>
 
                     <p className="text-xs text-center text-muted-foreground">
@@ -598,7 +646,7 @@ export default function ContactPage() {
               Our Locations
             </Badge>
             <h2 className="font-galano text-3xl md:text-4xl font-bold">Our Global Offices</h2>
-            <p className="text-xl text-muted-foreground">Visit us at any of our offices across New Zealand and India</p>
+            <p className="text-xl text-muted-foreground stats-intro-text">Visit us at any of our offices across New Zealand and India</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -742,7 +790,7 @@ export default function ContactPage() {
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center space-y-6">
             <h2 className="font-galano text-3xl md:text-4xl font-bold">Ready to Take the Next Step?</h2>
-            <p className="text-xl opacity-90">
+            <p className="text-xl opacity-90 stats-intro-text">
               Book a free consultation with our education experts and start your journey towards global education and
               opportunities.
             </p>
@@ -760,3 +808,5 @@ export default function ContactPage() {
     </>
   )
 }
+
+

@@ -47,7 +47,7 @@ export default function IrelandPage() {
                 Study in Ireland
               </Badge>
               <h1 className="font-galano text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight">
-                Where <span style={{ color: emeraldGreen }}>Innovation</span> Meets Heritage
+                Where <span>Innovation</span> Meets Heritage
               </h1>
               <p className="text-xl text-muted-foreground">
                 Ranked among the world's safest and most future-ready countries, Ireland offers globally recognized
@@ -83,7 +83,7 @@ export default function IrelandPage() {
         <div className="container-custom">
           <div className="text-center mb-8">
             <h2 className="font-galano text-2xl md:text-3xl font-bold">Our Partner Universities in Ireland</h2>
-            <p className="text-muted-foreground mt-2">
+            <p className="text-muted-foreground mt-2 stats-intro-text">
               We collaborate with Ireland's top universities to provide quality education
             </p>
           </div>
@@ -293,7 +293,7 @@ export default function IrelandPage() {
               Key Facts
             </Badge>
             <h2 className="font-galano text-3xl md:text-4xl font-bold">Ireland at a Glance</h2>
-            <p className="text-xl text-muted-foreground">Essential statistics about studying in Ireland</p>
+            <p className="text-xl text-muted-foreground stats-intro-text">Essential statistics about studying in Ireland</p>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -323,7 +323,7 @@ export default function IrelandPage() {
           </div>
 
           <div className="mt-12 text-center">
-            <p className="text-lg text-muted-foreground">
+            <p className="text-lg text-muted-foreground stats-intro-text">
               ✅ Perfect for tech, research, finance, and healthcare students seeking a smooth path to global careers.
             </p>
           </div>
@@ -338,7 +338,7 @@ export default function IrelandPage() {
               Education Institutions
             </Badge>
             <h2 className="font-galano text-3xl md:text-4xl font-bold">Leading Universities in Ireland</h2>
-            <p className="text-xl text-muted-foreground">Explore Ireland's prestigious universities and colleges</p>
+            <p className="text-xl text-muted-foreground stats-intro-text">Explore Ireland's prestigious universities and colleges</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -566,7 +566,7 @@ export default function IrelandPage() {
               Academic Programs
             </Badge>
             <h2 className="font-galano text-3xl md:text-4xl font-bold">Most Popular Programs in Ireland</h2>
-            <p className="text-xl text-muted-foreground">Discover in-demand programs with excellent career prospects</p>
+            <p className="text-xl text-muted-foreground stats-intro-text">Discover in-demand programs with excellent career prospects</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -637,7 +637,7 @@ export default function IrelandPage() {
           </div>
 
           <div className="mt-12 text-center">
-            <p className="text-lg text-muted-foreground">
+            <p className="text-lg text-muted-foreground stats-intro-text">
               💡 Courses with co-op/internship options available for real-world experience.
             </p>
           </div>
@@ -652,7 +652,7 @@ export default function IrelandPage() {
               Application Process
             </Badge>
             <h2 className="font-galano text-3xl md:text-4xl font-bold">How We Help You Get There — Step-by-Step</h2>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-xl text-muted-foreground stats-intro-text">
               We guide you through every step of your study abroad journey
             </p>
           </div>
@@ -686,7 +686,7 @@ export default function IrelandPage() {
           </div>
 
           <div className="mt-12 text-center">
-            <p className="text-lg text-muted-foreground mb-6">
+            <p className="text-lg text-muted-foreground mb-6 stats-intro-text">
               🛡️ We're with you at every stage — from your first consultation to settling abroad.
             </p>
             <Button size="lg" asChild>
@@ -707,7 +707,7 @@ export default function IrelandPage() {
               Student Voices
             </Badge>
             <h2 className="font-galano text-3xl md:text-4xl font-bold">Student Story</h2>
-            <p className="text-xl text-muted-foreground">Success stories from students who chose Ireland</p>
+            <p className="text-xl text-muted-foreground stats-intro-text">Success stories from students who chose Ireland</p>
           </div>
 
           <div className="mx-auto w-full">
@@ -758,7 +758,7 @@ export default function IrelandPage() {
               Common Questions
             </Badge>
             <h2 className="font-galano text-3xl md:text-4xl font-bold">Frequently Asked Questions</h2>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-xl text-muted-foreground stats-intro-text">
               Find answers to frequently asked questions about studying in Ireland
             </p>
           </div>
@@ -828,7 +828,7 @@ export default function IrelandPage() {
           </div>
 
           <div className="mt-12 text-center">
-            <p className="text-lg text-muted-foreground mb-6">Still have questions?</p>
+            <p className="text-lg text-muted-foreground mb-6 stats-intro-text">Still have questions?</p>
             <Button size="lg" asChild>
               <Link href="/consultation" className="gap-2">
                 Talk to Our Counsellors
@@ -840,7 +840,7 @@ export default function IrelandPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="section-padding bg-primary">
+      {/* <section className="section-padding bg-primary">
         <div className="container-custom">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
@@ -889,7 +889,35 @@ export default function IrelandPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+
+       <section className="section-padding bg-primary text-primary-foreground">
+              <div className="container-custom">
+                <div className="max-w-3xl mx-auto text-center space-y-6">
+                  <h2 className="font-galano text-3xl md:text-4xl font-bold">Ready to Study in Ireland?</h2>
+                  <p className="text-xl opacity-90 stats-intro-text">
+                    Thousands of students trust Transpacific to make their Ireland education dream come true — from start
+                    to finish.
+                  </p>
+                  <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+                    <Button size="lg" variant="secondary" asChild className="px-8 py-6 text-lg">
+                      <Link href="/consultation" className="gap-2">
+                        Book Your Free Consultation
+                        <ArrowRight className="h-4 w-4" />
+                      </Link>
+                    </Button>
+                    {/* <Button
+                      size="lg"
+                      variant="outline"
+                      className="bg-primary-foreground/10 border-primary-foreground/20 hover:bg-primary-foreground/20 px-8 py-6 text-lg"
+                      asChild
+                    >
+                      <Link href="/apply">Apply to Study in Ireland</Link>
+                    </Button> */}
+                  </div>
+                </div>
+              </div>
+            </section>
     </>
   )
 }

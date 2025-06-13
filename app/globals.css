@@ -334,8 +334,33 @@ p + p {
   word-wrap: normal !important;
   white-space: normal !important;
   hyphens: none !important;
-  /* Additional properties to prevent any kind of breaking */
   text-wrap: nowrap !important;
   display: inline-block !important;
 }
 
+
+
+
+
+
+.no-word-gaps {
+  word-spacing: normal !important;
+  letter-spacing: normal !important;
+}
+
+/* .center {
+  display: flex;
+  justify-content: center;
+  text-align: center !important;
+} */
+
+
+.process {
+  word-break: keep-all !important;
+  overflow-wrap: normal !important;
+  word-wrap: normal !important;
+  white-space: normal !important;
+  hyphens: none !important;
+  text-wrap: wrap !important;
+  display: inline-block !important;
+}

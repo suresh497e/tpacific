@@ -88,9 +88,9 @@ export default function StatsSection({ className }: StatsSectionProps) {
             }}
             className="card-hover bg-gradient-to-br from-blue-50 to-white p-6 rounded-xl shadow-lg text-center h-full flex flex-col justify-center cursor-pointer"
           >
-            <div className="inline-flex items-center justify-center w-12 h-12 bg-blue-100 rounded-full mb-4 mx-auto">
-              <Award className="h-6 w-6 text-primary" />
-            </div>
+            {/* <div className="inline-flex items-center justify-center w-12 h-12 bg-blue-100 rounded-full mb-4 mx-auto">
+              {/* <Award className="h-6 w-6 text-primary" /> 
+            </div> */}
             <div className="text-3xl font-bold text-primary mb-1 flex justify-center items-baseline">
               <span id="years-counter">0</span>
               <span className="text-xl ml-1">+</span>
@@ -110,9 +110,9 @@ export default function StatsSection({ className }: StatsSectionProps) {
             }}
             className="card-hover bg-gradient-to-br from-blue-50 to-white p-6 rounded-xl shadow-lg text-center h-full flex flex-col justify-center cursor-pointer"
           >
-            <div className="inline-flex items-center justify-center w-12 h-12 bg-blue-100 rounded-full mb-4 mx-auto">
+            {/* <div className="inline-flex items-center justify-center w-12 h-12 bg-blue-100 rounded-full mb-4 mx-auto">
               <Users className="h-6 w-6 text-primary" />
-            </div>
+            </div> */}
             <div className="text-3xl font-bold text-primary mb-1 flex justify-center items-baseline">
               <span id="visas-counter">0</span>
               <span className="text-xl ml-1">+</span>
@@ -132,9 +132,9 @@ export default function StatsSection({ className }: StatsSectionProps) {
             }}
             className="card-hover bg-gradient-to-br from-blue-50 to-white p-6 rounded-xl shadow-lg text-center h-full flex flex-col justify-center cursor-pointer"
           >
-            <div className="inline-flex items-center justify-center w-12 h-12 bg-blue-100 rounded-full mb-4 mx-auto">
+            {/* <div className="inline-flex items-center justify-center w-12 h-12 bg-blue-100 rounded-full mb-4 mx-auto">
               <Globe className="h-6 w-6 text-primary" />
-            </div>
+            </div> */}
             <div className="text-3xl font-bold text-primary mb-1 flex justify-center items-baseline">
               <span id="countries-counter">0</span>
               <span className="text-xl ml-1">+</span>
@@ -154,9 +154,9 @@ export default function StatsSection({ className }: StatsSectionProps) {
             }}
             className="card-hover bg-gradient-to-br from-blue-50 to-white p-6 rounded-xl shadow-lg text-center h-full flex flex-col justify-center cursor-pointer"
           >
-            <div className="inline-flex items-center justify-center w-12 h-12 bg-blue-100 rounded-full mb-4 mx-auto">
+            {/* <div className="inline-flex items-center justify-center w-12 h-12 bg-blue-100 rounded-full mb-4 mx-auto">
               <Building className="h-6 w-6 text-primary" />
-            </div>
+            </div> */}
             <div className="text-3xl font-bold text-primary mb-1 flex justify-center items-baseline">
               <span id="offices-counter">0</span>
             </div>

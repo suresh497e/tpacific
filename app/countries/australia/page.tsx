@@ -244,7 +244,7 @@ export default function AustraliaPage() {
               Our Partners
             </Badge>
             <h2 className="font-galano text-3xl md:text-4xl font-bold">Our Partner Universities in Australia</h2>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-xl text-muted-foreground stats-intro-text">
               We work with Australia's leading institutions to provide you with the best education opportunities
             </p>
           </div>
@@ -275,7 +275,7 @@ export default function AustraliaPage() {
               All Universities
             </Badge>
             <h2 className="font-galano text-3xl md:text-4xl font-bold">Browse All Australian Universities</h2>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-xl text-muted-foreground stats-intro-text">
               Discover the full range of institutions offering innovative programs and exceptional student experiences
             </p>
           </div>
@@ -438,7 +438,7 @@ export default function AustraliaPage() {
               Popular Programs
             </Badge>
             <h2 className="font-galano text-3xl md:text-4xl font-bold">Popular Programs in Australia</h2>
-            <p className="text-xl text-muted-foreground">Career-focused courses & programs available</p>
+            <p className="text-xl text-muted-foreground stats-intro-text">Career-focused courses & programs available</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -555,7 +555,7 @@ export default function AustraliaPage() {
               FAQs
             </Badge>
             <h2 className="font-galano text-3xl md:text-4xl font-bold">Frequently Asked Questions</h2>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-xl text-muted-foreground stats-intro-text">
               Find answers to common questions about studying in Australia
             </p>
           </div>
@@ -587,7 +587,7 @@ export default function AustraliaPage() {
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center space-y-6">
             <h2 className="font-galano text-3xl md:text-4xl font-bold">Ready to Study in Australia?</h2>
-            <p className="text-xl opacity-90">
+            <p className="text-xl opacity-90 stats-intro-text">
               Thousands of students trust Transpacific to make their Australian education dream come true — from start
               to finish.
             </p>
@@ -598,14 +598,14 @@ export default function AustraliaPage() {
                   <ArrowRight className="h-4 w-4" />
                 </Link>
               </Button>
-              <Button
+              {/* <Button
                 size="lg"
                 variant="outline"
                 className="bg-primary-foreground/10 border-primary-foreground/20 hover:bg-primary-foreground/20 px-8 py-6 text-lg"
                 asChild
               >
                 <Link href="/apply">Apply to Study in Australia</Link>
-              </Button>
+              </Button> */}
             </div>
           </div>
         </div>

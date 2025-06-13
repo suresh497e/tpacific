@@ -17,7 +17,7 @@ export default function ProcessStep({ number, title, description }: ProcessStepP
         </div>
         <div className="space-y-3">
           <h3 className="font-galano text-xl font-semibold">{title}</h3>
-          <p className="text-muted-foreground">{description}</p>
+          <p className="text-muted-foreground text-left whitespace-normal break-words no-word-gaps process">{description}</p>
         </div>
       </CardContent>
     </Card>

@@ -291,6 +291,8 @@ import {
   Plane,
   Home,
   HeartHandshake,
+  //Link,
+  ArrowRight
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -422,7 +424,7 @@ export default function AboutPage() {
               <h3 className="text-2xl font-bold mb-6 text-slate-800">
                 Our Mission
               </h3>
-              <p className="text-lg leading-relaxed text-gray-700">
+              <p className="text-lg leading-relaxed text-gray-700 stats-intro-text">
                 To be the most trusted and customer-focused international
                 education consultancy, providing comprehensive guidance and
                 support to students across India and beyond. We are committed to
@@ -435,7 +437,7 @@ export default function AboutPage() {
               <h3 className="text-2xl font-bold mb-6 text-slate-800">
                 Our Vision
               </h3>
-              <p className="text-lg leading-relaxed text-gray-700">
+              <p className="text-lg leading-relaxed text-gray-700 stats-intro-text">
                 To help as many students as possible with genuine information
                 and expert advice to realize their dream of studying abroad and
                 to join the global community of successful international
@@ -476,7 +478,9 @@ export default function AboutPage() {
               <h3 className="text-xl font-bold mb-2 text-slate-800">
                 Rajesh Kumar
               </h3>
-              <p className="text-primary font-semibold mb-3 stats-intro-text">CEO & Founder</p>
+              <p className="text-primary font-semibold mb-3 stats-intro-text">
+                CEO & Founder
+              </p>
               <p className="text-gray-600 text-sm leading-relaxed stats-intro-text">
                 With over 15 years of experience in international education
                 consulting, Rajesh founded Transpacific with a vision to make
@@ -655,7 +659,7 @@ export default function AboutPage() {
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 stats-intro-text">
               What We Do
             </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto stats-intro-text">
               Comprehensive services to support your entire study abroad journey
             </p>
           </div>
@@ -751,7 +755,7 @@ export default function AboutPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-primary/10">
+      {/* <section className="py-16 bg-primary/10">
         <div className="container mx-auto px-4 max-w-6xl text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Ready to Start Your Global Journey?
@@ -763,6 +767,41 @@ export default function AboutPage() {
           <Button asChild size="lg" className="px-8 py-3 text-lg">
             <Link href="/contact">Get Free Consultation</Link>
           </Button>
+        </div>
+      </section> */}
+
+      <section className="section-padding bg-primary text-primary-foreground">
+        <div className="container-custom">
+          <div className="max-w-3xl mx-auto text-center space-y-6">
+            <h2 className="font-galano text-3xl md:text-4xl font-bold">
+              Ready to Start Your Global Journey?
+            </h2>
+            <p className="text-xl opacity-90 stats-intro-text">
+              Book a free consultation with our experts and take the first step
+              toward your international education and career goals.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+              <Button
+                size="lg"
+                variant="secondary"
+                asChild
+                className="px-8 py-6 text-lg"
+              >
+                <Link href="/consultation" className="gap-2">
+                  Get Free Consultation
+                  <ArrowRight className="h-4 w-4" />
+                </Link>
+              </Button>
+              {/* <Button
+                      size="lg"
+                      variant="outline"
+                      className="bg-primary-foreground/10 border-primary-foreground/20 hover:bg-primary-foreground/20 px-8 py-6 text-lg"
+                      asChild
+                    >
+                      <Link href="/apply">Apply to Study in Australia</Link>
+                    </Button> */}
+            </div>
+          </div>
         </div>
       </section>
     </main>

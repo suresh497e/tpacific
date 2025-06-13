@@ -65,7 +65,7 @@ export default function TestimonialsSection({ className = "" }) {
     return sentences
       .filter((sentence) => sentence.trim() !== "")
       .map((sentence, index) => (
-        <span key={index} className="testimonial-sentence">
+        <span key={index} className="testimonial-sentence stats-intro-text">
           {sentence.trim()}
         </span>
       ))
