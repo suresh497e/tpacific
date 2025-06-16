@@ -207,7 +207,7 @@ export default function TermsPage() {
                   </p>
                   <p className="text-gray-700 mb-2">
                     Email:{" "}
-                    <a href="mailto:legal@transpacific.in" className="text-blue-600 hover:text-blue-800">
+                    <a href="mailto:info@tpacific.co.nz" className="text-blue-600 hover:text-blue-800">
                       legal@transpacific.in
                     </a>
                   </p>

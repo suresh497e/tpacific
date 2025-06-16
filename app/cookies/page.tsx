@@ -158,7 +158,7 @@ export default function CookiesPage() {
                 <div className="space-y-2">
                   <p className="text-gray-700">
                     <strong>Email:</strong>
-                    <a href="mailto:privacy@transpacific.in" className="text-blue-600 hover:text-blue-800 ml-2">
+                    <a href="mailto:info@tpacific.co.nz" className="text-blue-600 hover:text-blue-800 ml-2">
                       privacy@transpacific.in
                     </a>
                   </p>
