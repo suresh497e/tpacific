@@ -17,7 +17,8 @@ export default function AustraliaPage() {
     {
       name: "University of Melbourne",
       logo: "/images/logos/university-of-melbourne.png",
-      image: "/australia_universities/one.png",
+     // image: "/australia_universities/one.png",
+     image: "/compressed/australia/1-min.png",
       description:
         "Australia's second-oldest university and the oldest in Victoria, consistently ranked among the leading universities in the world. Known for research excellence and outstanding teaching quality.",
       link: "https://www.unimelb.edu.au/",
@@ -27,7 +28,7 @@ export default function AustraliaPage() {
     {
       name: "Australian National University",
       logo: "/images/logos/australian-national-university.png",
-      image: "/australia_universities/2.png",
+     image: "/compressed/australia/2-min.png",
       description:
         "Australia's national university and a world-leading centre for education and research. Located in the nation's capital, ANU is renowned for its intensive research culture.",
       link: "https://www.anu.edu.au/",
@@ -37,7 +38,7 @@ export default function AustraliaPage() {
     {
       name: "University of Sydney",
       logo: "/images/logos/university-of-sydney.png",
-      image: "/australia_universities/3.png",
+     image: "/compressed/australia/3-min.png",
       description:
         "Australia's first university, founded in 1850. A member of the prestigious Group of Eight, it's known for its beautiful campus, progressive values, and world-class research facilities.",
       link: "https://www.sydney.edu.au/",
@@ -47,7 +48,7 @@ export default function AustraliaPage() {
     {
       name: "University of Queensland",
       logo: "/images/logos/university-of-queensland.png",
-      image: "/australia_universities/4.png",
+     image: "/compressed/australia/4-min.png",
       description:
         "One of Australia's leading research and teaching institutions. UQ is renowned for its vibrant campus culture, world-class facilities, and exceptional graduate outcomes.",
       link: "https://www.uq.edu.au/",
@@ -57,7 +58,7 @@ export default function AustraliaPage() {
     {
       name: "University of New South Wales",
       logo: "/images/logos/unsw-sydney.png",
-      image: "/australia_universities/5.png",
+     image: "/compressed/australia/5-min.png",
       description:
         "A leading Australian university with a focus on cutting-edge research, innovative teaching and learning, and community engagement. Known for its strong industry connections.",
       link: "https://www.unsw.edu.au/",
@@ -67,7 +68,7 @@ export default function AustraliaPage() {
     {
       name: "Monash University",
       logo: "/images/logos/monash-university.png",
-      image: "/australia_universities/6.png",
+     image: "/compressed/australia/6-min.png",
       description:
         "Australia's largest university, known for its international presence and research excellence. Monash offers a wide range of courses and has campuses in Australia, Malaysia, and more.",
       link: "https://www.monash.edu/",
@@ -77,7 +78,7 @@ export default function AustraliaPage() {
     {
       name: "University of Western Australia",
       logo: "/images/logos/university-of-western-australia.png",
-      image: "/australia_universities/7.png",
+     image: "/compressed/australia/7-min.png",
       description:
         "Western Australia's oldest university, known for its picturesque campus and research strengths. UWA is a member of the prestigious Group of Eight and offers a comprehensive range of courses.",
       link: "https://www.uwa.edu.au/",
@@ -87,7 +88,7 @@ export default function AustraliaPage() {
     {
       name: "University of Adelaide",
       logo: "/images/logos/university-of-adelaide.png",
-      image: "/australia_universities/8.png",
+      image: "/compressed/australia/8-min.png",
       description:
         "One of Australia's oldest and most prestigious universities, known for its research excellence and beautiful campus. Adelaide offers a wide range of undergraduate and postgraduate programs.",
       link: "https://www.adelaide.edu.au/",
@@ -97,7 +98,7 @@ export default function AustraliaPage() {
     {
       name: "Queensland University of Technology",
       logo: "/images/logos/qut-logo.png",
-      image: "/australia_universities/9.png",
+    image: "/compressed/australia/9-min.png",
       description:
         "A highly successful Australian university with an applied emphasis in courses and research. QUT has been named one of the fastest-rising universities in the world.",
       link: "https://www.qut.edu.au/",
@@ -107,7 +108,7 @@ export default function AustraliaPage() {
     {
       name: "University of Technology Sydney",
       logo: "/images/logos/university-of-technology-sydney.png",
-      image: "/australia_universities/10.png",
+     image: "/compressed/australia/10-min.png",
       description:
         "A dynamic and innovative university, known for its practice-oriented teaching and strong industry connections. UTS is ranked as one of Australia's top young universities.",
       link: "https://www.uts.edu.au/",
@@ -215,7 +216,8 @@ export default function AustraliaPage() {
             <div className="relative lg:h-[600px] animate-fade-in">
               <div className="relative h-full w-full rounded-2xl overflow-hidden">
                 <img
-                  src="/countries_hero/AUS.jpeg"
+                  //src="/countries_hero/AUS.jpeg"
+                  src="/compressed/countries_hero/aus.png"
                   alt="Student at an Australian university campus"
                   className="h-full w-full object-cover"
                 />

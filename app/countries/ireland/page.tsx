@@ -68,7 +68,8 @@ export default function IrelandPage() {
             <div className="relative lg:h-[500px]">
               <div className="relative h-full w-full rounded-2xl overflow-hidden">
                 <img
-                  src="/countries_hero/Ireland.jpeg"
+                 // src="/countries_hero/Ireland.jpeg"
+                  src="/compressed/countries_hero/ire.png"
                   alt="Indian student at an Irish university campus"
                   className="h-full w-full object-cover"
                 />
@@ -345,62 +346,63 @@ export default function IrelandPage() {
             {[
               {
                 name: "Trinity College Dublin",
-                image: "/ireland_universities/1.png",
+               // image: "/ireland_universities/1.png",
+                image: "/compressed/ireland/1-min.png",
                 logo: "/images/logos/trinity-college-dublin-logo.png",
                 description: "Ireland's oldest university, founded in 1592, renowned for research and innovation.",
               },
               {
                 name: "University College Dublin",
-                image: "/ireland_universities/2.png",
+                 image: "/compressed/ireland/2-min.png",
                 logo: "/images/logos/ucd-logo.png",
                 description: "Ireland's largest university with strengths in research, innovation and teaching.",
               },
               {
                 name: "National University of Ireland, Galway",
-                image: "/ireland_universities/3.png",
+               image: "/compressed/ireland/3-min.png",
                 logo: "/images/logos/nui-galway-logo.png",
                 description: "Known for medical sciences, engineering, and arts programs.",
               },
               {
                 name: "University College Cork",
-                image: "/ireland_universities/4.png",
+                image: "/compressed/ireland/4-min.png",
                 logo: "/images/logos/ucc-logo.png",
                 description: "Excellent programs in medicine, business, and environmental sciences.",
               },
               {
                 name: "University of Limerick",
-                image: "/ireland_universities/5.png",
+                image: "/compressed/ireland/5-min.png",
                 logo: "/images/logos/ul-logo.png",
                 description: "Strong in technology, business, and health sciences with co-op programs.",
               },
               {
                 name: "Maynooth University",
-                image: "/ireland_universities/6.png",
+                 image: "/compressed/ireland/6-min.png",
                 logo: "/images/logos/maynooth-logo.png",
                 description: "Ireland's fastest growing university with strengths in arts and sciences.",
               },
               {
                 name: "Technological University Dublin",
-                image: "/ireland_universities/7.png",
+                image: "/compressed/ireland/7-min.png",
                 logo: "/tu-dublin-logo.png",
                 description: "Ireland's first technological university with strong industry connections.",
               },
               {
                 name: "Royal College of Surgeons in Ireland",
-                image: "/ireland_universities/8.png",
+                image: "/compressed/ireland/8-min.png",
                 logo: "/rcsi-logo.png",
                 description: "Specialized in medical education and research with a global reputation.",
               },
               {
                 name: "Griffith College",
-                image: "/ireland_universities/9.png",
+                image: "/compressed/ireland/9-min.png",
                 logo: "/griffith-college-logo.png",
                 description:
                   "Ireland's largest independent third-level institution with campuses in Dublin, Cork and Limerick.",
               },
               {
                 name: "Dublin Business School",
-                image: "/ireland_universities/10.png",
+                image: "/compressed/ireland/10-min.png",
                 logo: "/dublin-business-school-logo.png",
                 description:
                   "Ireland's largest independent college offering business, law, arts and psychology programs.",

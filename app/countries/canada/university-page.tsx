@@ -7,28 +7,29 @@ export default function CanadaUniversityPage() {
     {
       name: "University of Toronto",
       logo: "/images/logos/university-of-toronto.png",
-      image: "/canada_universities/1.png",
+      //image: "/canada_universities/1.png",
+      image: "/compressed/canada/1-min.png",
       description: "Canada's top-ranked university with strengths across all disciplines and research areas.",
       link: "https://www.utoronto.ca/",
     },
     {
       name: "University of British Columbia",
       logo: "/images/logos/university-of-british-columbia.png",
-      image: "/canada_universities/2.png",
+       image: "/compressed/canada/2-min.png",
       description: "A global center for research and teaching with a stunning campus in Vancouver.",
       link: "https://www.ubc.ca/",
     },
     {
       name: "McGill University",
       logo: "/images/logos/mcgill-university.png",
-      image: "/canada_universities/3.png",
+       image: "/compressed/canada/3-min.png",
       description: "One of Canada's oldest universities with a reputation for excellence in medicine and research.",
       link: "https://www.mcgill.ca/",
     },
     {
       name: "Queen's University",
       logo: "/images/logos/queens-university.png",
-      image: "/canada_universities/4.png",
+       image: "/compressed/canada/4-min.png",
       description:
         "One of Canada's oldest universities with a reputation for academic excellence and student experience.",
       link: "https://www.queensu.ca/",
@@ -36,56 +37,56 @@ export default function CanadaUniversityPage() {
     {
       name: "University of Alberta",
       logo: "/images/logos/university-of-alberta.png",
-      image: "/canada_universities/5.png",
+      image: "/compressed/canada/5-min.png",
       description: "Known for research excellence in energy, health sciences, and artificial intelligence.",
       link: "https://www.ualberta.ca/",
     },
     {
       name: "Université de Montréal",
       logo: "/images/logos/universite-de-montreal.png",
-      image: "/canada_universities/6.png",
+       image: "/compressed/canada/6-min.png",
       description: "A leading French-language university with strengths in medicine, law, and sciences.",
       link: "https://www.umontreal.ca/",
     },
     {
       name: "University of Calgary",
       logo: "/images/logos/university-of-calgary.png",
-      image: "/canada_universities/7.png",
+       image: "/compressed/canada/7-min.png",
       description: "A research-intensive university with strong ties to the energy and healthcare sectors.",
       link: "https://www.ucalgary.ca/",
     },
     {
       name: "University of Waterloo",
       logo: "/images/logos/university-of-waterloo.png",
-      image: "/canada_universities/8.png",
+       image: "/compressed/canada/8-min.png",
       description: "Known for engineering, computer science, and the world's largest co-op program.",
       link: "https://uwaterloo.ca/",
     },
     {
       name: "Western University",
       logo: "/images/logos/western-university.png",
-      image: "/canada_universities/9.png",
+       image: "/compressed/canada/9-min.png",
       description: "A comprehensive university with a beautiful campus and strong business and medical programs.",
       link: "https://www.uwo.ca/",
     },
     {
       name: "University of Ottawa",
       logo: "/images/logos/university-of-ottawa.png",
-      image: "/canada_universities/10.png",
+       image: "/compressed/canada/10-min.png",
       description: "Canada's largest bilingual university with strong programs in law, medicine, and social sciences.",
       link: "https://www.uottawa.ca/",
     },
     {
       name: "Dalhousie University",
       logo: "/images/logos/dalhousie-university.png",
-      image: "/canada_universities/11.png",
+       image: "/compressed/canada/11-min.png",
       description: "Atlantic Canada's leading research university with strengths in marine sciences and health.",
       link: "https://www.dal.ca/",
     },
     {
       name: "Simon Fraser University",
       logo: "/images/logos/simon-fraser-university.png",
-      image: "/canada_universities/12.png",
+       image: "/compressed/canada/12-min.png",
       description: "Known for innovation and interdisciplinary programs with campuses throughout British Columbia.",
       link: "https://www.sfu.ca/",
     },
@@ -164,7 +165,8 @@ export default function CanadaUniversityPage() {
     <UniversityPageTemplate
       country="Canada"
       countryColor="#e11d48"
-      heroImage="/countries_hero/Canada.jpeg"
+      //heroImage="/countries_hero/Canada.jpeg"
+      heroImage="/compressed/countries_hero/can.png"
       universities={universities}
       programs={programs}
       testimonial={{

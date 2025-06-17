@@ -7,7 +7,8 @@ export default function UKUniversityPage() {
     {
       name: "University of Oxford",
       logo: "/images/logos/oxford-logo.png",
-      image: "/uk_universities/1.png",
+      //image: "/uk_universities/1.png",
+        image: "/compressed/uk/1-min.png",
       description:
         "One of the world's oldest and most prestigious universities, known for academic excellence and research.",
       link: "https://www.ox.ac.uk/",
@@ -15,63 +16,63 @@ export default function UKUniversityPage() {
     {
       name: "University of Cambridge",
       logo: "/images/logos/cambridge-logo.png",
-      image: "/uk_universities/2.png",
+      image: "/compressed/uk/2-min.png",
       description: "A collegiate research university with a rich history and world-renowned reputation for excellence.",
       link: "https://www.cam.ac.uk/",
     },
     {
       name: "Imperial College London",
       logo: "/images/logos/imperial-logo.png",
-      image: "/uk_universities/3.png",
+      image: "/compressed/uk/3-min.png",
       description: "A world-class university focused on science, engineering, medicine, and business.",
       link: "https://www.imperial.ac.uk/",
     },
     {
       name: "University College London",
       logo: "/images/logos/ucl-logo.png",
-      image: "/uk_universities/4.png",
+      image: "/compressed/uk/4-min.png",
       description: "A diverse, global university with a progressive approach to research and education.",
       link: "https://www.ucl.ac.uk/",
     },
     {
       name: "London School of Economics",
       logo: "/images/logos/lse-logo.png",
-      image: "/uk_universities/5.png",
+      image: "/compressed/uk/5-min.png",
       description: "Specializing in social sciences, economics, politics, and related disciplines.",
       link: "https://www.lse.ac.uk/",
     },
     {
       name: "University of Edinburgh",
       logo: "/images/logos/edinburgh-logo.png",
-      image: "/uk_universities/6.png",
+      image: "/compressed/uk/6-min.png",
       description: "One of Scotland's ancient universities with strengths across humanities and sciences.",
       link: "https://www.ed.ac.uk/",
     },
     {
       name: "King's College London",
       logo: "/images/logos/kings-logo.png",
-      image: "/uk_universities/7.png",
+      image: "/compressed/uk/7-min.png",
       description: "A research-led university known for medicine, law, humanities, and social sciences.",
       link: "https://www.kcl.ac.uk/",
     },
     {
       name: "University of Manchester",
       logo: "/images/logos/manchester-logo.png",
-      image: "/uk_universities/8.png",
+       image: "/compressed/uk/8-min.png",
       description: "A large research university with a strong focus on innovation and social responsibility.",
       link: "https://www.manchester.ac.uk/",
     },
     {
       name: "University of Bristol",
       logo: "/images/logos/bristol-logo.png",
-      image: "/uk_universities/9.png",
+       image: "/compressed/uk/9-min.png",
       description: "A research-intensive university with a reputation for creativity and innovation.",
       link: "https://www.bristol.ac.uk/",
     },
     {
       name: "University of Warwick",
       logo: "/images/logos/warwick-logo.png",
-      image: "/uk_universities/10.png",
+       image: "/compressed/uk/10-min.png",
       description: "A modern research university known for business, economics, and interdisciplinary programs.",
       link: "https://warwick.ac.uk/",
     },
@@ -168,7 +169,8 @@ export default function UKUniversityPage() {
     <UniversityPageTemplate
       country="United Kingdom"
       countryColor="#2563eb"
-      heroImage="/countries_hero/UK.jpeg"
+     // heroImage="/countries_hero/UK.jpeg"
+      heroImage="/compressed/countries_hero/uk.png"
       universities={universities}
       programs={programs}
       logoCarousel={<UKLogoCarousel />}

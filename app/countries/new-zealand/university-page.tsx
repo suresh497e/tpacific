@@ -8,7 +8,8 @@ export default function NewZealandUniversityPage() {
     {
       name: "University of Auckland",
       logo: "/images/logos/auckland-university-logo.png",
-      image: "/newzealand_universities/1.png",
+     // image: "/newzealand_universities/1.png",
+     image: "/compressed/newzealand/1-min.png",
       description:
         "New Zealand's largest and highest-ranked university, offering a diverse range of programs across multiple disciplines.",
       link: "https://www.auckland.ac.nz/",
@@ -16,14 +17,14 @@ export default function NewZealandUniversityPage() {
     {
       name: "University of Canterbury",
       logo: "/images/logos/canterbury-university-logo.png",
-      image: "/newzealand_universities/2.png",
+     image: "/compressed/newzealand/2-min.png",
       description: "Known for its engineering and science programs, with a beautiful campus in Christchurch.",
       link: "https://www.canterbury.ac.nz/",
     },
     {
       name: "Victoria University of Wellington",
       logo: "/images/logos/victoria-university-logo.png",
-      image: "/newzealand_universities/3.png",
+     image: "/compressed/newzealand/3-min.png",
       description:
         "Located in New Zealand's capital city, offering strong programs in law, humanities, and government studies.",
       link: "https://www.wgtn.ac.nz/",
@@ -31,42 +32,42 @@ export default function NewZealandUniversityPage() {
     {
       name: "University of Otago",
       logo: "/images/logos/otago-university-logo.png",
-      image: "/newzealand_universities/4.png",
+     image: "/compressed/newzealand/4-min.png",
       description: "New Zealand's first university, renowned for its medical school and research excellence.",
       link: "https://www.otago.ac.nz/",
     },
     {
       name: "Lincoln University",
       logo: "/images/logos/lincoln-university-logo.png",
-      image: "/newzealand_universities/5.png",
+      image: "/compressed/newzealand/5-min.png",
       description: "Specializing in agriculture, food science, and environmental management.",
       link: "https://www.lincoln.ac.nz/",
     },
     {
       name: "Massey University",
       logo: "/images/logos/massey-university-logo.png",
-      image: "/newzealand_universities/6.png",
+      image: "/compressed/newzealand/6-min.png",
       description: "Known for its distance education programs and strong focus on agricultural sciences.",
       link: "https://www.massey.ac.nz/",
     },
     {
       name: "Auckland University of Technology (AUT)",
       logo: "/images/logos/aut-logo.png",
-      image: "/newzealand_universities/7.png",
+     image: "/compressed/newzealand/7-min.png",
       description: "A modern university with a focus on technology, business, and creative industries.",
       link: "https://www.aut.ac.nz/",
     },
     {
       name: "University of Waikato",
       logo: "/images/logos/waikato-university-logo.png",
-      image: "/newzealand_universities/8.png",
+     image: "/compressed/newzealand/8-min.png",
       description: "Known for its management school and Māori and Pacific development programs.",
       link: "https://www.waikato.ac.nz/",
     },
     {
       name: "Unitec Institute of Technology",
       logo: "/images/logos/unitec-logo.png",
-      image: "/newzealand_universities/9.png",
+     image: "/compressed/newzealand/9-min.png",
       description: "Offering practical, career-focused education with strong industry connections in Auckland.",
       link: "https://www.unitec.ac.nz/",
     },
@@ -151,7 +152,8 @@ export default function NewZealandUniversityPage() {
     <UniversityPageTemplate
       country="New Zealand"
       countryColor="#10b981"
-      heroImage="/countries_hero/NZ.jpeg"
+     // heroImage="/countries_hero/NZ.jpeg"
+      heroImage="/compressed/countries_hero/nz.png"
       universities={universities}
       programs={programs}
       testimonial={testimonial}

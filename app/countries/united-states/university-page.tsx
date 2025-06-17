@@ -8,7 +8,8 @@ export default function UnitedStatesUniversityPage() {
     {
       name: "Harvard University",
       logo: "/images/logos/harvard-university.png",
-      image: "/us_universities/1.png",
+     // image: "/us_universities/1.png",
+      image: "/compressed/us/1-min.png",
       description:
         "Founded in 1636, Harvard is America's oldest university and a member of the prestigious Ivy League.",
       link: "https://www.harvard.edu/",
@@ -16,28 +17,28 @@ export default function UnitedStatesUniversityPage() {
     {
       name: "Stanford University",
       logo: "/images/logos/stanford-university.png",
-      image: "/us_universities/2.png",
+      image: "/compressed/us/2-min.png",
       description: "Located in Silicon Valley, Stanford is renowned for its entrepreneurial spirit and innovation.",
       link: "https://www.stanford.edu/",
     },
     {
       name: "Massachusetts Institute of Technology",
       logo: "/mit-logo-generic.png",
-      image: "/us_universities/3.png",
+      image: "/compressed/us/3-min.png",
       description: "MIT is a world leader in science, technology, engineering, and mathematics education.",
       link: "https://www.mit.edu/",
     },
     {
       name: "California Institute of Technology",
       logo: "/caltech-logo.png",
-      image: "/us_universities/4.png",
+     image: "/compressed/us/4-min.png",
       description: "Caltech is known for its strong focus on science and engineering education and research.",
       link: "https://www.caltech.edu/",
     },
     {
       name: "Princeton University",
       logo: "/princeton-university-logo.png",
-      image: "/us_universities/5.png",
+     image: "/compressed/us/5-min.png",
       description:
         "Princeton combines the strengths of a major research university with the qualities of an outstanding liberal arts college.",
       link: "https://www.princeton.edu/",
@@ -45,28 +46,28 @@ export default function UnitedStatesUniversityPage() {
     {
       name: "University of Chicago",
       logo: "/university-of-chicago-logo.png",
-      image: "/us_universities/6.png",
+       image: "/compressed/us/6-min.png",
       description: "UChicago is known for its rigorous academic programs and intellectual environment.",
       link: "https://www.uchicago.edu/",
     },
     {
       name: "Columbia University",
       logo: "/columbia-university-logo.png",
-      image: "/us_universities/7.png",
+      image: "/compressed/us/7-min.png",
       description: "Located in New York City, Columbia offers a distinctive and distinguished learning environment.",
       link: "https://www.columbia.edu/",
     },
     {
       name: "Yale University",
       logo: "/yale-university-logo.png",
-      image: "/us_universities/8.png",
+      image: "/compressed/us/8-min.png",
       description: "Yale is committed to improving the world today and for future generations through education.",
       link: "https://www.yale.edu/",
     },
     {
       name: "University of Pennsylvania",
       logo: "/upenn-logo.png",
-      image: "/us_universities/9.png",
+     image: "/compressed/us/9-min.png",
       description: "Penn is known for its interdisciplinary approach and entrepreneurial spirit.",
       link: "https://www.upenn.edu/",
     },
@@ -145,7 +146,8 @@ export default function UnitedStatesUniversityPage() {
     <UniversityPageTemplate
       country="United States"
       countryColor="#3c65af"
-      heroImage="/countries_hero/USA.jpeg"
+     // heroImage="/countries_hero/USA.jpeg"
+      heroImage="/compressed/countries_hero/us.png"
       universities={universities}
       programs={programs}
       testimonial={testimonial}
