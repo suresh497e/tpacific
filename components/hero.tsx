@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Globe, GraduationCap, MapPin } from "lucide-react"
+import { SafeImage } from "@/components/safe-image"
 
 export default function Hero() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
@@ -106,27 +107,39 @@ export default function Hero() {
           <div className="relative hidden lg:block">
             <div className="relative w-full h-[450px]">
               <div className="absolute top-0 right-0 w-80 h-80 rounded-2xl overflow-hidden shadow-2xl transform rotate-3 z-20">
-                <img
-                 // src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Hero%203-glnQbHOBfxiqdYRyApCEUchg8vc5x3.png"
-                 src= "/compressed/hero/3-min.png"
+                <SafeImage
+                  src="/compressed/hero/3-min.png"
                   alt="Student at airport with passport"
                   className="w-full h-full object-cover"
+                  imageType="student"
+                  seoParams={{
+                    country: "global",
+                    topic: "international travel"
+                  }}
                 />
               </div>
               <div className="absolute bottom-0 left-0 w-72 h-72 rounded-2xl overflow-hidden shadow-2xl transform -rotate-6 z-10">
-                <img
-                 // src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Hero%201-BqULCKg2N6OPOy0gNEWk6j0iWlTMBP.png"
-                  src= "/compressed/hero/1-min.png"
+                <SafeImage
+                  src="/compressed/hero/1-min.png"
                   alt="Student on campus"
                   className="w-full h-full object-cover"
+                  imageType="student"
+                  seoParams={{
+                    country: "global",
+                    topic: "university education"
+                  }}
                 />
               </div>
               <div className="absolute top-1/4 left-1/4 w-64 h-64 rounded-2xl overflow-hidden shadow-2xl z-30">
-                <img
-                 // src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/hero2-Ubxna1SdYcw4w13Vbrh7lhwB5xQ0BK.png"
-                  src= "/compressed/hero/2-min.png"
+                <SafeImage
+                  src="/compressed/hero/2-min.png"
                   alt="Student traveling the world"
                   className="w-full h-full object-cover"
+                  imageType="student"
+                  seoParams={{
+                    country: "global",
+                    topic: "study abroad"
+                  }}
                 />
               </div> 
 

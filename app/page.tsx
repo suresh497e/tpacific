@@ -10,13 +10,22 @@ import OfficeAnnouncement from "@/components/office-announcement"
 import { DirectJustifier } from "@/components/direct-justifier"
 import GetInTouch from "@/components/get-in-touch"
 import { DebugTheme } from "@/components/debug-theme"
-// import type { Metadata } from "next"
+import type { Metadata } from "next"
+import { withMetadataValidation } from "@/lib/metadata-utils"
 
-// export const metadata: Metadata = {
-//   title: "Transpacific Immigration Services | Study, Work & Settle Abroad",
-//   description:
-//     "Your gateway to studying, working, or settling in top destinations worldwide with expert guidance at every step.",
-// }
+export const metadata: Metadata = withMetadataValidation({
+  title: "Study Abroad",
+  description: "Expert visa guidance",
+  keywords: ['study abroad', 'visa', 'immigration'],
+  openGraph: {
+    title: "Study Abroad",
+    description: "Expert visa guidance",
+  },
+  twitter: {
+    title: "Study Abroad",
+    description: "Expert visa guidance",
+  }
+})
 
 // Define more compact section classes
 const sectionClasses = {

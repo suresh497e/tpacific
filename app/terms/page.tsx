@@ -1,10 +1,19 @@
 import type { Metadata } from "next"
+import { withMetadataValidation } from "@/lib/metadata-utils"
 
-export const metadata: Metadata = {
-  title: "Terms of Service | Transpacific Immigration",
-  description:
-    "Terms of Service for Transpacific Immigration Services - governing your use of our website and services.",
-}
+export const metadata: Metadata = withMetadataValidation({
+  title: "Terms of Service",
+  description: "Legal terms",
+  keywords: ['terms', 'legal', 'conditions'],
+  openGraph: {
+    title: "Terms of Service",
+    description: "Legal terms",
+  },
+  twitter: {
+    title: "Terms of Service",
+    description: "Legal terms",
+  }
+})
 
 export default function TermsPage() {
   return (

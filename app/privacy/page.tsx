@@ -1,10 +1,19 @@
 import type { Metadata } from "next"
+import { withMetadataValidation } from "@/lib/metadata-utils"
 
-export const metadata: Metadata = {
-  title: "Privacy Policy - Transpacific Immigration Services",
-  description:
-    "Privacy Policy for Transpacific Immigration Services - How we collect, use, and protect your personal data",
-}
+export const metadata: Metadata = withMetadataValidation({
+  title: "Privacy Policy",
+  description: "Data protection",
+  keywords: ['privacy', 'data', 'protection'],
+  openGraph: {
+    title: "Privacy Policy",
+    description: "Data protection",
+  },
+  twitter: {
+    title: "Privacy Policy",
+    description: "Data protection",
+  }
+})
 
 export default function PrivacyPage() {
   return (

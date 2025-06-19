@@ -35,6 +35,8 @@ import CountryTestimonials from "@/components/country-testimonials"
 
 const emeraldGreen = "#007848"
 
+import { metadata } from "./metadata"
+
 export default function IrelandPage() {
   return (
     <>

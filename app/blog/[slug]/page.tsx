@@ -3,6 +3,8 @@ import { ArrowLeft, ArrowRight, Calendar, ChevronRight, Clock, FileText, MapPin,
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { generateMetadata } from "./metadata"
+import { SafeImage } from "@/components/safe-image"
 
 export default function BlogPostPage({ params }: { params: { slug: string } }) {
   // This is a placeholder. In a real implementation, you would fetch the blog post data based on the slug
@@ -95,7 +97,21 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
             {/* Main Content */}
             <div className="lg:col-span-2 space-y-8">
               <div className="rounded-xl overflow-hidden">
-                <img src={post.image || "/placeholder.svg"} alt={post.title} className="w-full h-auto" />
+                <SafeImage 
+                  src={post.image || "/placeholder.svg"} 
+                  alt={post.title} 
+                  className="w-full h-auto" 
+                  imageType="blog"
+                  seoParams={{
+                    topic: post.title,
+                    country: post.title.includes("New Zealand") ? "New Zealand" : 
+                             post.title.includes("Australia") ? "Australia" : 
+                             post.title.includes("Canada") ? "Canada" : 
+                             post.title.includes("Ireland") ? "Ireland" : 
+                             post.title.includes("UK") || post.title.includes("United Kingdom") ? "United Kingdom" : 
+                             post.title.includes("USA") || post.title.includes("United States") ? "United States" : ""
+                  }}
+                />
               </div>
 
               <div className="prose prose-lg dark:prose-invert max-w-none">

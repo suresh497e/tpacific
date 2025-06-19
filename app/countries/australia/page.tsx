@@ -12,6 +12,8 @@ import { AustraliaLogoCarousel } from "@/components/australia-logo-carousel"
 import { UniversityLogo } from "@/components/university-logo"
 import CountryTestimonials from "@/components/country-testimonials"
 
+import { metadata } from "./metadata"
+
 export default function AustraliaPage() {
   const australianUniversities = [
     {

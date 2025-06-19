@@ -2,6 +2,7 @@ import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
+import { SafeImage } from "@/components/safe-image"
 
 interface CountryCardProps {
   flag?: string
@@ -21,16 +22,28 @@ export default function CountryCard({ flag, country, description, image, color =
     <Card className="overflow-hidden transition-all hover:shadow-md" style={cardStyles}>
       <div className="aspect-[4/3] w-full overflow-hidden relative">
         {/* Applying Aesthetic-Usability Effect - beautiful imagery */}
-        <img
+        <SafeImage
           src={image || "/placeholder.svg"}
           alt={`${country} landscape`}
           className="h-full w-full object-cover transition-transform hover:scale-105 duration-500"
+          imageType="country"
+          seoParams={{
+            country: country
+          }}
         />
 
         {/* Adding flag for better visual recognition */}
         {flag && (
           <div className="absolute top-4 right-4 h-8 w-12 overflow-hidden rounded shadow-md">
-            <img src={flag || "/placeholder.svg"} alt={`${country} flag`} className="h-full w-full object-cover" />
+            <SafeImage 
+              src={flag || "/placeholder.svg"} 
+              alt={`${country} flag`} 
+              className="h-full w-full object-cover" 
+              imageType="flag"
+              seoParams={{
+                country: country
+              }}
+            />
           </div>
         )}
       </div>

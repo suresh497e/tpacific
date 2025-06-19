@@ -3,12 +3,21 @@
 // import { Button } from "@/components/ui/button"
 // import { Card, CardContent } from "@/components/ui/card"
 // import { CheckCircle, Briefcase, GraduationCap, Globe, FileText, Plane, Home, HeartHandshake } from "lucide-react"
+// import { withMetadataValidation } from "@/lib/metadata-utils"
 
-// export const metadata: Metadata = {
-//   title: "About Transpacific | Your Gateway to Global Opportunities",
-//   description:
-//     "Learn about Transpacific Immigration Services - your trusted partner for international education and immigration services with over a decade of experience.",
-// }
+// export const metadata: Metadata = withMetadataValidation({
+//   title: "About Us",
+//   description: "Our story & mission",
+//   keywords: ['about', 'team', 'experience'],
+//   openGraph: {
+//     title: "About Us",
+//     description: "Our story & mission",
+//   },
+//   twitter: {
+//     title: "About Us",
+//     description: "Our story & mission",
+//   }
+// })
 
 // export default function AboutPage() {
 //   return (

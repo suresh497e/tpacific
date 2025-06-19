@@ -97,6 +97,10 @@ export function UniversityPageTemplate({
                   alt={`${country} landscape`}
                   fallbackSrc="/bustling-university-campus.png"
                   className="h-full w-full object-cover"
+                  imageType="hero"
+                  seoParams={{
+                    country: country
+                  }}
                 />
               </div>
             </div>
@@ -131,6 +135,11 @@ export function UniversityPageTemplate({
                     alt={`${university.name} campus`}
                     fallbackSrc="/bustling-university-campus.png"
                     className="w-full h-full object-cover"
+                    imageType="university"
+                    seoParams={{
+                      name: university.name,
+                      country: country
+                    }}
                   />
                 </div>
                 <div className="p-6">
@@ -141,6 +150,11 @@ export function UniversityPageTemplate({
                       alt={`${university.name} logo`}
                       fallbackSrc="/generic-university-logo.png"
                       className="h-10 w-10 object-contain ml-3"
+                      imageType="logo"
+                      seoParams={{
+                        name: university.name,
+                        country: country
+                      }}
                     />
                   </div>
                   <p className="text-gray-600 mb-4">{university.description}</p>
