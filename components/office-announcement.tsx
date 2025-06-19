@@ -53,10 +53,10 @@ export default function OfficeAnnouncement() {
                 <MapPin className="h-5 w-5 text-primary" />
                 <span>Hyderabad, Telangana, India</span>
               </div>
-              <div className="flex items-center gap-2 text-gray-700">
+              {/* <div className="flex items-center gap-2 text-gray-700">
                 <Calendar className="h-5 w-5 text-primary" />
                 <span>Grand Opening: May 18, 2025</span>
-              </div>
+              </div> */}
             </div>
           </div>
         </motion.div>

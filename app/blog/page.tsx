@@ -1,3 +1,4 @@
+
 import Link from "next/link"
 import { ArrowRight, Calendar, ChevronRight, Clock, FileText, MapPin, User } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -6,6 +7,8 @@ import { Badge } from "@/components/ui/badge"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
 export default function BlogPage() {
+ 
+
   return (
     <>
       {/* Hero Section */}
@@ -179,9 +182,9 @@ export default function BlogPage() {
               </div>
 
               <div className="flex justify-center pt-8">
-                <Button variant="outline" size="lg">
+                {/* <Button  variant="outline" size="lg">
                   Load More Articles
-                </Button>
+                </Button> */}
               </div>
             </div>
 
