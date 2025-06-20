@@ -17,7 +17,7 @@ export default function CountriesPage() {
             <h1 className="font-galano text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight">
               Explore Your <span className="text-primary">Global Education</span> Options
             </h1>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto stats-intro-text">
               Discover top study destinations with world-class universities, vibrant cultures, and exciting career
               opportunities.
             </p>
@@ -40,32 +40,32 @@ export default function CountriesPage() {
             <CountryCard
               country="New Zealand"
               description="Affordable tuition with excellent quality of life and post-study work opportunities."
-              image="/images/new-zealand-indian-students.png"
+              image="/compressed/countries_hero/nz.png"
             />
             <CountryCard
               country="Australia"
               description="World-class universities with flexible work rights and diverse study options."
-              image="/images/australia-indian-students.png"
+              image="/compressed/countries_hero/aus.png"
             />
             <CountryCard
               country="Canada"
               description="Pathway to permanent residency with affordable education in a safe environment."
-              image="/images/canada-indian-students.png"
+              image="/compressed/countries_hero/can.png"
             />
             <CountryCard
               country="United Kingdom"
               description="Prestigious education with 2-3 year post-study work visas and global recognition."
-              image="/images/uk-indian-students.png"
+              image="/compressed/countries_hero/uk.png"
             />
             <CountryCard
               country="United States"
               description="World-renowned universities with cutting-edge research and diverse campus experiences."
-              image="/images/usa-indian-students.png"
+              image="/compressed/countries_hero/us.png"
             />
             <CountryCard
               country="Ireland"
               description="English-speaking EU destination with growing tech opportunities and a 2-year stay-back option."
-              image="/images/ireland-indian-students.png"
+              image="/compressed/countries_hero/ire.png"
             />
           </div>
         </div>
@@ -76,7 +76,7 @@ export default function CountriesPage() {
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center space-y-6">
             <h2 className="font-galano text-3xl md:text-4xl font-bold">Not Sure Which Country is Right for You?</h2>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-xl text-muted-foreground stats-intro-text">
               Our education experts can help you compare options and find the perfect fit for your academic goals,
               budget, and career aspirations.
             </p>

@@ -104,10 +104,10 @@ export default function BlogPage() {
                     </p>
                     <div className="pt-2">
                       <Button variant="outline" asChild>
-                        <Link href="/blog/student-visa-changes-2025" className="gap-2">
+                        {/* <Link href="/blog/student-visa-changes-2025" className="gap-2">
                           Read More
                           <ArrowRight className="h-4 w-4" />
-                        </Link>
+                        </Link> */}
                       </Button>
                     </div>
                   </CardContent>
@@ -126,10 +126,10 @@ export default function BlogPage() {
                     </p>
                     <div className="pt-2">
                       <Button variant="outline" asChild>
-                        <Link href="/blog/uk-graduate-route-extension" className="gap-2">
+                        {/* <Link href="/blog/uk-graduate-route-extension" className="gap-2">
                           Read More
                           <ArrowRight className="h-4 w-4" />
-                        </Link>
+                        </Link> */}
                       </Button>
                     </div>
                   </CardContent>
@@ -150,10 +150,10 @@ export default function BlogPage() {
                     </p>
                     <div className="pt-2">
                       <Button variant="outline" asChild>
-                        <Link href="/blog/choose-right-course-university" className="gap-2">
+                        {/* <Link href="/blog/choose-right-course-university" className="gap-2">
                           Read More
                           <ArrowRight className="h-4 w-4" />
-                        </Link>
+                        </Link> */}
                       </Button>
                     </div>
                   </CardContent>
@@ -172,10 +172,10 @@ export default function BlogPage() {
                     </p>
                     <div className="pt-2">
                       <Button variant="outline" asChild>
-                        <Link href="/blog/why-indian-students-choose-nz" className="gap-2">
+                        {/* <Link href="/blog/why-indian-students-choose-nz" className="gap-2">
                           Read More
                           <ArrowRight className="h-4 w-4" />
-                        </Link>
+                        </Link> */}
                       </Button>
                     </div>
                   </CardContent>
@@ -191,7 +191,7 @@ export default function BlogPage() {
 
             {/* Sidebar */}
             <div className="space-y-8">
-              <Card className="border-border/50">
+              {/* <Card className="border-border/50">
                 <CardContent className="p-6 space-y-6">
                   <h3 className="font-galano text-xl font-bold">Trending Topics</h3>
                   <div className="space-y-4">
@@ -212,18 +212,18 @@ export default function BlogPage() {
                     ))}
                   </div>
                 </CardContent>
-              </Card>
+              </Card> */}
 
               <Card className="border-border/50">
                 <CardContent className="p-6 space-y-6">
                   <h3 className="font-galano text-xl font-bold">Quick Access</h3>
                   <div className="space-y-3">
-                    <Button variant="outline" className="w-full justify-start gap-2" asChild>
+                    {/* <Button variant="outline" className="w-full justify-start gap-2" asChild>
                       <Link href="/apply">
                         <FileText className="h-4 w-4" />
                         Start Application
                       </Link>
-                    </Button>
+                    </Button> */}
                     <Button variant="outline" className="w-full justify-start gap-2" asChild>
                       <Link href="/contact">
                         <Calendar className="h-4 w-4" />
@@ -236,17 +236,17 @@ export default function BlogPage() {
                         See Countries We Serve
                       </Link>
                     </Button>
-                    <Button variant="outline" className="w-full justify-start gap-2" asChild>
+                    {/* <Button variant="outline" className="w-full justify-start gap-2" asChild>
                       <Link href="/resources">
                         <FileText className="h-4 w-4" />
                         Download Visa Checklists
                       </Link>
-                    </Button>
+                    </Button> */}
                   </div>
                 </CardContent>
               </Card>
 
-              <Card className="border-border/50 bg-primary/5">
+              {/* <Card className="border-border/50 bg-primary/5">
                 <CardContent className="p-6 space-y-4">
                   <h3 className="font-galano text-xl font-bold">Free Webinar</h3>
                   <div className="space-y-2">
@@ -268,7 +268,7 @@ export default function BlogPage() {
                     <Link href="/webinars/course-selection">Reserve Your Spot</Link>
                   </Button>
                 </CardContent>
-              </Card>
+              </Card> */}
 
               <Card className="border-border/50">
                 <CardContent className="p-6 space-y-4">
@@ -354,13 +354,13 @@ export default function BlogPage() {
                       <span>{article.date}</span>
                     </div>
                     <Button variant="link" className="p-0 h-auto" asChild>
-                      <Link
+                      {/* <Link
                         href={`/blog/${article.title.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`}
                         className="flex items-center"
                       >
                         Read Article
                         <ArrowRight className="ml-1 h-4 w-4" />
-                      </Link>
+                      </Link> */}
                     </Button>
                   </CardContent>
                 </Card>
