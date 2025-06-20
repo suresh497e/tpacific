@@ -85,18 +85,18 @@ export default function Footer() {
               >
                 Contact
               </Link>
-              <Link
+              {/* <Link
                 href="/faqs"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
                 FAQs
-              </Link>
-              <Link
+              </Link> */}
+              {/* <Link
                 href="/blog"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
                 Blog
-              </Link>
+              </Link> */}
             </nav>
           </div>
 
