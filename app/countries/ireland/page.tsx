@@ -351,54 +351,63 @@ export default function IrelandPage() {
                // image: "/ireland_universities/1.png",
                 image: "/compressed/ireland/1-min.png",
                 logo: "/images/logos/trinity-college-dublin-logo.png",
+                link: "https://www.tcd.ie/",
                 description: "Ireland's oldest university, founded in 1592, renowned for research and innovation.",
               },
               {
                 name: "University College Dublin",
                  image: "/compressed/ireland/2-min.png",
                 logo: "/images/logos/ucd-logo.png",
+                link: "https://www.ucd.ie/",
                 description: "Ireland's largest university with strengths in research, innovation and teaching.",
               },
               {
                 name: "National University of Ireland, Galway",
                image: "/compressed/ireland/3-min.png",
                 logo: "/images/logos/nui-galway-logo.png",
+                link: "https://www.universityofgalway.ie/",
                 description: "Known for medical sciences, engineering, and arts programs.",
               },
               {
                 name: "University College Cork",
                 image: "/compressed/ireland/4-min.png",
                 logo: "/images/logos/ucc-logo.png",
+                link: "https://www.ucc.ie/en/",
                 description: "Excellent programs in medicine, business, and environmental sciences.",
               },
               {
                 name: "University of Limerick",
                 image: "/compressed/ireland/5-min.png",
                 logo: "/images/logos/ul-logo.png",
+                link: "https://www.ul.ie/",
                 description: "Strong in technology, business, and health sciences with co-op programs.",
               },
               {
                 name: "Maynooth University",
                  image: "/compressed/ireland/6-min.png",
                 logo: "/images/logos/maynooth-logo.png",
+                link: "https://www.maynoothuniversity.ie/",
                 description: "Ireland's fastest growing university with strengths in arts and sciences.",
               },
               {
                 name: "Technological University Dublin",
                 image: "/compressed/ireland/7-min.png",
                 logo: "/tu-dublin-logo.png",
+                link:"https://www.tudublin.ie/",
                 description: "Ireland's first technological university with strong industry connections.",
               },
               {
                 name: "Royal College of Surgeons in Ireland",
                 image: "/compressed/ireland/8-min.png",
                 logo: "/rcsi-logo.png",
+                link: "https://www.rcsi.com/",
                 description: "Specialized in medical education and research with a global reputation.",
               },
               {
                 name: "Griffith College",
                 image: "/compressed/ireland/9-min.png",
                 logo: "/griffith-college-logo.png",
+                link: "https://www.griffith.ie/",
                 description:
                   "Ireland's largest independent third-level institution with campuses in Dublin, Cork and Limerick.",
               },
@@ -406,6 +415,7 @@ export default function IrelandPage() {
                 name: "Dublin Business School",
                 image: "/compressed/ireland/10-min.png",
                 logo: "/dublin-business-school-logo.png",
+                link: "https://www.dbs.ie/",
                 description:
                   "Ireland's largest independent college offering business, law, arts and psychology programs.",
               },
@@ -435,10 +445,10 @@ export default function IrelandPage() {
                   <p className="text-muted-foreground">{university.description}</p>
                   <div className="pt-4">
                     <Button size="sm" asChild>
-                      <Link href="#" className="gap-2">
+                      <a href={university.link} className="gap-2" target="_blank">
                         Visit Website
                         {/* <ExternalLink className="h-4 w-4" /> */}
-                      </Link>
+                      </a>
                     </Button>
                   </div>
                 </CardContent>
